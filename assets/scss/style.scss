@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+// ===================================
+// use
+// ===================================
+
+// foundationフォルダ
+// destyle.css
+@use "foundation/destyle";
+// base.scss
+@use "foundation/base";
+
+// layoutフォルダ
+// ヘッダーCSS
+@use "layout/l-header";
+// フッターCSS
+@use "layout/l-footer";
+// メインCSS
+@use "layout/l-main";
+
+// projectフォルダ
+// グローバルナビ（ヘッダー）CSS
+@use "object/project/p-nav-pc";
+// グローバルナビ（SP）CSS
+@use "object/project/p-nav-sp";
+// ハンバーガーボタンCSS
+@use "object/project/p-hamburger";
+
+
+// componentフォルダ
+// ロゴCSS
+@use "object/component/c-logo";
+// ボタンCSS
