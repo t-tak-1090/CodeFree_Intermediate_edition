@@ -1,0 +1,37 @@
+@use "../../global/forward" as fw;
+
+.p-nav-list-pc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include fw.mq("tab") {
+        display: none;
+    }
+}
+.c-nav-item-pc a {
+    position: relative;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.c-nav-item-pc a::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.c-nav-item-pc a:hover::after {
+    bottom: -5px;
+    opacity: 1;
+    visibility: visible;
+}
+.c-nav-item-pc a:hover {
+    opacity: 0.7;
+}
+

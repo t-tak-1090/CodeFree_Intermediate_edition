@@ -1,0 +1,50 @@
+@use "../../global/forward" as fw;
+
+.p-nav-sp {
+    display: none;
+    @include fw.mq("tab") {
+        position: fixed;
+        top: 50px;
+        right: -100%;
+        z-index: 100;
+        display: block;
+        width: 80%;
+        height: 350px;
+        background-color: #530700;
+        transition: all 0.5s;
+    }
+}
+.p-nav-sp.open {
+    @include fw.mq("tab") {
+        right: 0;
+    }
+}
+.p-nav-list-sp {
+    @include fw.mq("tab") {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+}
+.c-nav-item-sp {
+    @include fw.mq("tab") {
+        width: 100%;
+        padding: 12px 0 13px 20px;
+    }
+}
+.c-nav-item-sp:hover {
+    @include fw.mq("tab") {
+        background-color: #000;
+    }
+}
+.c-nav-item-sp a {
+    @include fw.mq("tab") {
+        display: block;
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: calc(33 / 18);
+        cursor: pointer;
+    }
+}
+
