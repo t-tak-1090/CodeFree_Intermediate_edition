@@ -3,14 +3,20 @@
 html {
     font-size: 62.5%;
 }
-
 body {
     color: #000;
     font-size: 1.6rem;
     font-family: "EB Garamond", "Zen Old Mincho", serif;
     background-color: rgba($color: #530700, $alpha: 0.1);
 }
-
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+a,span {
+    display: inline-block;
+}
 
 
 

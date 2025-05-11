@@ -23,11 +23,15 @@
 @use "object/project/p-nav";
 // ハンバーガーボタンCSS
 @use "object/project/p-hamburger";
-
+// ファーストビューCSS
+@use "object/project/p-fv";
 
 // componentフォルダ
-
+// タイトルCSS
+@use "object/component/c-title";
 
 // ボタンCSS
 
 //  utilityフォルダ
+// ユーティリティCSS
+@use "object/utility/u-background";

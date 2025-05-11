@@ -387,9 +387,20 @@ body {
   background-color: rgba(83, 7, 0, 0.1);
 }
 
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a, span {
+  display: inline-block;
+}
+
 .l-header {
   position: absolute;
-  z-index: 10;
+  z-index: 20;
   width: 100%;
   padding: 30px 0;
 }
@@ -612,5 +623,90 @@ body {
     bottom: 0;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
+  }
+}
+
+.p-fv {
+  position: relative;
+}
+
+.p-fv__slider-01,
+.p-fv__slider-02,
+.p-fv__slider-03 {
+  width: 100%;
+  height: 100svh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.p-fv__slider-01 {
+  background-image: url(../../../../assets/img/fv/slider-img01.jpg);
+}
+@media screen and (max-width: 768px) {
+  .p-fv__slider-01 {
+    background-image: url(../../../../assets/img/fv/sp-slider-img01.png);
+  }
+}
+
+.p-fv__slider-02 {
+  background-image: url(../../../../assets/img/fv/slider-img02.png);
+}
+@media screen and (max-width: 768px) {
+  .p-fv__slider-02 {
+    background-image: url(../../../../assets/img/fv/sp-slider-img02.png);
+  }
+}
+
+.p-fv__slider-03 {
+  background-image: url(../../../../assets/img/fv/slider-img03.png);
+}
+@media screen and (max-width: 768px) {
+  .p-fv__slider-03 {
+    background-image: url(../../../../assets/img/fv/sp-slider-img03.png);
+  }
+}
+
+.c-title__fv {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.3em;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+@media screen and (max-width: 768px) {
+  .c-title__fv {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 3rem;
+    line-height: 2;
+    text-align: center;
+  }
+}
+
+.u-background-color {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.u-background {
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(83, 7, 0)), to(rgba(83, 7, 0, 0)));
+  background: linear-gradient(to right, rgb(83, 7, 0), rgba(83, 7, 0, 0));
+}
+@media screen and (max-width: 768px) {
+  .u-background {
+    width: 0;
   }
 }/*# sourceMappingURL=style.css.map */
