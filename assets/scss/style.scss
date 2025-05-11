@@ -28,6 +28,8 @@
 @use "object/project/p-fv";
 // キャッチフレーズCSS
 @use "object/project/p-catchphrase";
+// いちおしCSS
+@use "object/project/p-recommendation";
 
 // componentフォルダ
 // タイトルCSS
@@ -40,3 +42,4 @@
 @use "object/utility/u-background";
 @use "object/utility/u-margin";
 @use "object/utility/u-padding";
+@use "object/utility/u-pc-only";

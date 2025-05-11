@@ -34,3 +34,23 @@
         line-height: 2.25;
     }
 }
+
+.c-title {
+    text-align: center;
+}
+
+.c-title__text-ja {
+    color: #530700;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: calc(33 / 30);
+    letter-spacing: 0.3em;
+}
+
+.c-title__text-en {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: calc(33 / 20);
+    letter-spacing: 0.3em;
+}
