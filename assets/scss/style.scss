@@ -15,8 +15,9 @@
 @use "layout/l-header";
 // フッターCSS
 @use "layout/l-footer";
-// メインCSS
+// コンテンツCSS
 @use "layout/l-container";
+@use "layout/l-inner";
 
 // projectフォルダ
 // グローバルナビ（ヘッダー）CSS
@@ -25,6 +26,8 @@
 @use "object/project/p-hamburger";
 // ファーストビューCSS
 @use "object/project/p-fv";
+// キャッチフレーズCSS
+@use "object/project/p-catchphrase";
 
 // componentフォルダ
 // タイトルCSS
@@ -35,3 +38,5 @@
 //  utilityフォルダ
 // ユーティリティCSS
 @use "object/utility/u-background";
+@use "object/utility/u-margin";
+@use "object/utility/u-padding";

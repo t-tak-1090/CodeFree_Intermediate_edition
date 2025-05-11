@@ -439,6 +439,31 @@ a, span {
   margin-inline: auto;
 }
 
+.l-inner__catchphrase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .l-inner__catchphrase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 200px;
+  }
+}
+
 .p-nav-pc__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,6 +692,29 @@ a, span {
   }
 }
 
+.p-catchphrase {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(../../../../assets/img/catchphrase/catchphrase-bg-img.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/catchphrase/catchphrase-bg-img.png);
+}
+
+.p-catchphrase__text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.3;
+  letter-spacing: 0.37em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media screen and (max-width: 768px) {
+  .p-catchphrase__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
 .c-title__fv {
   position: absolute;
   z-index: 10;
@@ -693,6 +741,23 @@ a, span {
   }
 }
 
+.c-title__catchphrase {
+  color: #530700;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.18em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media screen and (max-width: 768px) {
+  .c-title__catchphrase {
+    font-size: 2.5rem;
+    line-height: 2.25;
+  }
+}
+
 .u-background-color {
   width: 100%;
   height: 100%;
@@ -701,12 +766,31 @@ a, span {
 
 .u-background {
   width: 50%;
-  height: 100%;
+  height: auto;
   background: -webkit-gradient(linear, left top, right top, from(rgb(83, 7, 0)), to(rgba(83, 7, 0, 0)));
   background: linear-gradient(to right, rgb(83, 7, 0), rgba(83, 7, 0, 0));
 }
 @media screen and (max-width: 768px) {
   .u-background {
     width: 0;
+  }
+}
+
+.u-margin__catchphrase {
+  margin-left: 60px;
+}
+@media screen and (max-width: 768px) {
+  .u-margin__catchphrase {
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+}
+
+.u-padding__catchphrase {
+  padding: 130px 0;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__catchphrase {
+    padding: 60px 0;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+@use "../global/forward" as fw;
+
+.l-inner__catchphrase {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    @include fw.mq(tab) {
+        flex-direction: column;
+        align-items: center;
+        max-width: 200px;
+    }
+}

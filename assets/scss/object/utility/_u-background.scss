@@ -8,7 +8,7 @@
 
 .u-background {
     width: 50%;
-    height: 100%;
+    height: auto;
     background: linear-gradient(to right, rgba(83, 7, 0, 1), rgba(83, 7, 0, 0));
     @include fw.mq("tab") {
         width: 0;
