@@ -859,6 +859,105 @@ a, span {
   line-height: 1.5625;
 }
 
+.p-news {
+  background-color: rgba(83, 7, 0, 0.1);
+}
+
+.p-news__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .p-news__contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.p-table {
+  width: 100%;
+}
+
+.p-table__header {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+  background-color: #530700;
+  color: #fff;
+}
+
+.p-table__tr {
+  position: relative;
+}
+
+.p-table__tr::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 90%;
+  height: 1px;
+  background-color: #530700;
+}
+
+.p-table__date,
+.p-table__text,
+.p-table__more {
+  background-color: #fff;
+}
+
+.p-table__date {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.p-table__text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.3888888889;
+}
+
+.p-table__more {
+  position: relative;
+  text-align: right;
+}
+
+.p-table__more::after {
+  content: "";
+  position: absolute;
+  top: 47%;
+  right: 5%;
+  width: 20%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../../../assets/img/news/news-img01.png);
+}
+@media screen and (max-width: 768px) {
+  .p-table__more::after {
+    right: 6%;
+    width: 25%;
+  }
+}
+
+.p-table__link {
+  color: #530700;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
 .c-title__fv {
   position: absolute;
   z-index: 10;
@@ -1052,6 +1151,31 @@ a, span {
   }
 }
 
+.u-margin__news {
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .u-margin__news {
+    margin-bottom: 40px;
+  }
+}
+
+.u-margin__table__date--top {
+  margin-left: 20px;
+}
+
+.u-margin__table__text--top {
+  margin-right: 20px;
+}
+
+.u-margin__table__date {
+  margin-left: 20px;
+}
+
+.u-margin__table__text {
+  margin-right: 20px;
+}
+
 .u-padding__catchphrase {
   padding: 130px 0;
 }
@@ -1086,6 +1210,50 @@ a, span {
   .u-padding__course {
     padding: 50px 0 60px 0;
   }
+}
+
+.u-padding__table__header {
+  padding: 10px 20px;
+}
+
+.u-padding__table__date--top {
+  padding: 30px 30px 10px 20px;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__table__date--top {
+    padding: 20px 5px 0 20px;
+  }
+}
+
+.u-padding__table__text--top {
+  padding: 30px 20px 10px 30px;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__table__text--top {
+    padding: 25px 20px 15px 5px;
+  }
+}
+
+.u-padding__table__date {
+  padding: 20px 30px 10px 20px;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__table__date {
+    padding: 10px 5px 0 20px;
+  }
+}
+
+.u-padding__table__text {
+  padding: 20px 20px 10px 30px;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__table__text {
+    padding: 10px 20px 15px 5px;
+  }
+}
+
+.u-padding__table__more {
+  padding: 20px 55px 25px 0;
 }
 
 @media screen and (max-width: 768px) {

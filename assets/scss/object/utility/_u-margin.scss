@@ -90,3 +90,28 @@
         margin-bottom: 10px;
     }
 }
+
+// お知らせ
+.u-margin__news {
+    margin-bottom: 70px;
+    @include fw.mq(tab) {
+        margin-bottom: 40px;
+    }
+}
+
+// テーブル
+.u-margin__table__date--top {
+    margin-left: 20px;
+}
+
+.u-margin__table__text--top {
+    margin-right: 20px;
+}
+
+.u-margin__table__date {
+    margin-left: 20px;
+}
+
+.u-margin__table__text {
+    margin-right: 20px;
+}
