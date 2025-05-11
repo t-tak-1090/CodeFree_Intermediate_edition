@@ -27,3 +27,39 @@
         padding: 50px 0 60px 0;
     }
 }
+
+.u-padding__table__header {
+    padding: 10px 20px;
+}
+
+.u-padding__table__date--top {
+    padding: 30px 30px 10px 20px;
+    @include fw.mq(tab) {
+        padding: 20px 5px 0 20px;
+    }
+}
+
+.u-padding__table__text--top {
+    padding: 30px 20px 10px 30px;
+    @include fw.mq(tab) {
+        padding: 25px 20px 15px 5px;
+    }
+}
+
+.u-padding__table__date {
+    padding: 20px 30px 10px 20px;
+    @include fw.mq(tab) {
+        padding: 10px 5px 0 20px;
+    }
+}
+
+.u-padding__table__text {
+    padding: 20px 20px 10px 30px;
+    @include fw.mq(tab) {
+        padding: 10px 20px 15px 5px;
+    }
+}
+
+.u-padding__table__more {
+    padding: 20px 55px 25px 0;
+}
