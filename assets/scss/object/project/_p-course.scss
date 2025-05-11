@@ -1,0 +1,36 @@
+@use "../../global/forward" as fw;
+
+.p-course {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/course/course-bg-img.png);
+}
+
+.p-course__list {
+    display: flex;
+    gap: 40px;
+    @include fw.mq(tab) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.p-course__item {
+    width: 25%;
+    @include fw.mq(tab) {
+        width: 100%;
+    }
+}
+
+.p-course__item-text-box {
+    text-align: center;
+    @include fw.mq(tab) {
+        text-align: left;
+    }
+}
+
+.p-course__item-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: calc(25 / 16);
+}
