@@ -1,0 +1,23 @@
+@use "../../global/forward" as fw;
+
+.c-title__fv {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: calc(70 / 40);
+    letter-spacing: 0.3em;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+    @include fw.mq("tab") {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        font-size: 3rem;
+        line-height: calc(60 / 30);
+        text-align: center;
+    }
+}
