@@ -1,0 +1,89 @@
+@use "../../global/forward" as fw;
+
+.p-recommendation {
+    background-color: rgba(83, 7, 0, 0.1);
+}
+
+.p-recommendation__contents--left,
+.p-recommendation__contents--right {
+    position: relative;
+    width: 65.2173913%;
+    @include fw.mq(tab) {
+        width: 100%;
+    }
+}
+
+.p-recommendation__contents--left {
+    text-align: left;
+}
+
+.p-recommendation__contents--right {
+    text-align: right;
+    @include fw.mq(tab) {
+        text-align: left;
+    }
+}
+
+.p-recommendation__contents-img {
+    @include fw.mq(tab) {
+        height: 220px;
+    }
+}
+
+.p-recommendation__extra {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: calc(25 / 16);
+}
+
+.p-recommendation__text-box--left,
+.p-recommendation__text-box--right {
+    position: absolute;
+    top: 150px;
+    z-index: -10;
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    background-color: #530700;
+    @include fw.mq(tab) {
+        position: static;
+        height: auto;
+    }
+}
+
+.p-recommendation__text-box--left {
+    left: 70%;
+}
+
+.p-recommendation__text-box--right {
+    right: 70%;
+    text-align: left;
+}
+
+.p-recommendation__text-box-inner {
+    width: 100%;
+    max-width: 275px;
+}
+
+.p-recommendation__text {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: calc(33 / 25);
+    @include fw.mq(tab) {
+        font-size: 2rem;
+        line-height: calc(33 / 20);
+    }
+}
+
+.p-recommendation__description {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: calc(25 / 16);
+}
+
+
+
+
+
+
