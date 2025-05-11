@@ -8,6 +8,7 @@
     }
 }
 
+// おすすめ
 .u-margin__recommendation {
     margin-bottom: 60px;
     @include fw.mq(tab) {
@@ -75,4 +76,17 @@
     }
 }
 
+// コース
+.u-margin__course {
+    margin-bottom: 70px;
+    @include fw.mq(tab) {
+        margin-bottom: 40px;
+    }
+}
 
+.u-margin__course__item-img {
+    margin-bottom: 20px;
+    @include fw.mq(tab) {
+        margin-bottom: 10px;
+    }
+}
