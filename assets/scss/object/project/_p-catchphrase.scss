@@ -1,0 +1,19 @@
+@use "../../global/forward" as fw;
+
+.p-catchphrase {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/catchphrase/catchphrase-bg-img.png);
+}
+
+.p-catchphrase__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.3;
+    letter-spacing: 0.37em;
+    writing-mode: vertical-rl;
+    @include fw.mq(tab) {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+}

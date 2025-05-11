@@ -1,0 +1,8 @@
+@use "../../global/forward" as fw;
+
+.u-padding__catchphrase {
+    padding: 130px 0;
+    @include fw.mq(tab) {
+        padding: 60px 0;
+    }
+}

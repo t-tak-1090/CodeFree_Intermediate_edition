@@ -1,0 +1,9 @@
+@use "../../global/forward" as fw;
+
+.u-margin__catchphrase {
+    margin-left: 60px;
+    @include fw.mq(tab) {
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+}
