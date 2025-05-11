@@ -1,0 +1,84 @@
+@use "../../global/forward" as fw;
+
+.p-nav-pc__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include fw.mq("tab") {
+        display: none;
+    }
+}
+.p-nav-pc__item a {
+    position: relative;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.p-nav-pc__item a::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.p-nav-pc__item a:hover::after {
+    bottom: -5px;
+    opacity: 1;
+    visibility: visible;
+}
+.p-nav-pc__item a:hover {
+    opacity: 0.7;
+}
+
+.p-nav-sp {
+    display: none;
+    @include fw.mq("tab") {
+        position: fixed;
+        top: 50px;
+        right: -100%;
+        z-index: 100;
+        display: block;
+        width: 80%;
+        height: 350px;
+        background-color: #530700;
+        transition: all 0.5s;
+    }
+}
+.p-nav-sp.open {
+    @include fw.mq("tab") {
+        right: 0;
+    }
+}
+.p-nav-sp__list {
+    @include fw.mq("tab") {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+}
+.p-nav-sp__item {
+    @include fw.mq("tab") {
+        width: 100%;
+        padding: 12px 0 13px 20px;
+    }
+}
+.p-nav-sp__item:hover {
+    @include fw.mq("tab") {
+        background-color: #000;
+    }
+}
+.p-nav-sp__item a {
+    @include fw.mq("tab") {
+        display: block;
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: calc(33 / 18);
+        cursor: pointer;
+    }
+}

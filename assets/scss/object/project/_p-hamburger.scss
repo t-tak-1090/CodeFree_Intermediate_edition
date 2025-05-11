@@ -1,0 +1,64 @@
+@use "../../global/forward" as fw;
+
+.p-hamburger {
+    display: none;
+    @include fw.mq("tab") {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 200;
+        display: block;
+        width: 72px;
+        height: 50px;
+        background-color: #fff;
+        transition: all 0.3s;
+    }
+}
+.c-hamburger__line,
+.c-hamburger__line::before,
+.c-hamburger__line::after {
+    @include fw.mq("tab") {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 4px;
+        background-color: #530700;
+        border-radius: 4px;
+        transition: all 0.3s;
+    }
+}
+.c-hamburger__line {
+    @include fw.mq("tab") {
+        top: 23px;
+        left: 20px;
+    }
+}
+.c-hamburger__line::before {
+    @include fw.mq("tab") {
+        top: 10px;
+        transition: all 0.3s;
+    }
+}
+.c-hamburger__line::after {
+    @include fw.mq("tab") {
+        bottom: 10px;
+        transition: all 0.3s;
+    }
+}
+.p-hamburger.open .c-hamburger__line {
+    @include fw.mq("tab") {
+        background-color: transparent;
+    }
+}
+.p-hamburger.open .c-hamburger__line::before {
+    @include fw.mq("tab") {
+        top: 0;
+        transform: rotate(45deg);
+    }
+}
+.p-hamburger.open .c-hamburger__line::after {
+    @include fw.mq("tab") {
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+}
