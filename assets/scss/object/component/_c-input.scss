@@ -1,0 +1,13 @@
+@use "../../global/forward" as fw;
+
+.c-input__name-wrapper {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.c-input__name,
+.c-input__email {
+    width: 78.75%;
+    background-color: #fff;
+}

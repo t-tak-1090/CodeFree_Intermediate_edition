@@ -38,10 +38,30 @@
 @use "object/project/p-table";
 // アクセスCSS
 @use "object/project/p-access";
+// 予約CSS
+@use "object/project/p-reservation";
+// フォームCSS
+@use "object/project/p-form";
 
 // componentフォルダ
 // タイトルCSS
 @use "object/component/c-title";
+// ラベルCSS
+@use "object/component/c-label";
+// インプットCSS
+@use "object/component/c-input";
+// ラジオボタンCSS
+@use "object/component/c-radio";
+// セレクトCSS
+@use "object/component/c-select";
+// テキストエリアCSS
+@use "object/component/c-textarea";
+// チェックボックスCSS
+@use "object/component/c-checkbox";
+// ボタンCSS
+@use "object/component/c-button";
+
+
 
 // ボタンCSS
 

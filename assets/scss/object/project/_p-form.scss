@@ -1,0 +1,36 @@
+@use "../../global/forward" as fw;
+
+.p-form__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-form__radio-wrapper,
+.p-form__select-wrapper {
+    width: 78.75%;
+}
+
+.p-form__select-wrapper {
+    position: relative;
+}
+
+.p-form__select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background-color: #530700;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    pointer-events: none;
+}
+
+.p-form__item__textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

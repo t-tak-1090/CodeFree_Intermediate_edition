@@ -435,13 +435,9 @@ a, span {
 }
 
 .l-container {
+  width: 85.185%;
   max-width: 920px;
   margin-inline: auto;
-}
-@media screen and (max-width: 768px) {
-  .l-container {
-    max-width: 84%;
-  }
 }
 
 .l-inner__catchphrase {
@@ -1048,6 +1044,64 @@ a, span {
   line-height: 1.5625;
 }
 
+.p-reservation {
+  background-color: rgba(83, 7, 0, 0.1);
+}
+
+.p-reservation__text {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.p-form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.p-form__radio-wrapper,
+.p-form__select-wrapper {
+  width: 78.75%;
+}
+
+.p-form__select-wrapper {
+  position: relative;
+}
+
+.p-form__select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background-color: #530700;
+  -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+          clip-path: polygon(0 0, 50% 100%, 100% 0);
+  pointer-events: none;
+}
+
+.p-form__item__textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
 .c-title__fv {
   position: absolute;
   z-index: 10;
@@ -1109,6 +1163,175 @@ a, span {
   font-weight: 500;
   line-height: 1.65;
   letter-spacing: 0.3em;
+}
+
+.c-label__title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.c-input__name-wrapper {
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+}
+
+.c-input__name,
+.c-input__email {
+  width: 78.75%;
+  background-color: #fff;
+}
+
+.c-radio__input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.c-radio__label {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+  margin-right: 60px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.c-radio__span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.c-radio__input:checked + .c-radio__span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.c-radio__input:focus + .c-radio__span::before {
+  outline: 2px solid #3498db;
+}
+
+.c-select {
+  width: 100%;
+  background-color: #fff;
+}
+
+.c-textarea {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+}
+
+.c-textarea__privacy {
+  width: 100%;
+  height: 300px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.7222222222;
+  background-color: #fff;
+}
+
+.c-checkbox__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.c-checkbox__input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.c-checkbox__label {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.c-checkbox__span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.c-checkbox__input:checked + .c-checkbox__span::before {
+  border-color: #3498db;
+}
+
+.c-checkbox__input:checked + .c-checkbox__span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+}
+
+.c-checkbox__input:focus + .c-checkbox__span::before {
+  outline: 2px solid #3498db;
+}
+
+.c-button__submit {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  padding: 10px 20px;
+  background-color: #530700;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+  text-align: center;
+  border: 1px solid #530700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c-button__submit:hover {
+  background-color: #fff;
+  color: #530700;
 }
 
 .u-background-color {
@@ -1291,6 +1514,36 @@ a, span {
   margin-left: 10px;
 }
 
+.u-margin__reservation {
+  margin-bottom: 40px;
+}
+
+.u-margin__reservation__text-box {
+  margin-bottom: 40px;
+}
+
+.u-margin__form__item {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .u-margin__form__item {
+    margin-bottom: 30px;
+  }
+}
+
+.u-margin__form__item-label {
+  margin-bottom: 10px;
+}
+
+.u-margin__form__item-checkbox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.u-margin__button__submit {
+  margin-inline: auto;
+}
+
 .u-padding__catchphrase {
   padding: 130px 0;
 }
@@ -1387,6 +1640,40 @@ a, span {
   .u-padding__access__address {
     padding: 20px;
   }
+}
+
+.u-padding__reservation {
+  padding: 80px 0;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__reservation {
+    padding: 50px 0;
+  }
+}
+
+.u-padding__reservation__contents {
+  padding: 0 80px;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__reservation__contents {
+    padding: 0;
+  }
+}
+
+.u-padding__input {
+  padding: 10px 20px;
+}
+
+.u-padding__select {
+  padding: 10px 20px;
+}
+
+.u-padding__textarea {
+  padding: 10px 20px;
+}
+
+.u-padding__textarea__privacy {
+  padding: 40px;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,47 @@
+@use "../../global/forward" as fw;
+
+.c-radio__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.c-radio__label {
+    position: relative;
+    display: inline-block;
+    padding-left: 40px;
+    margin-right: 60px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.c-radio__span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.c-radio__input:checked + .c-radio__span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    transform: translateY(-50%);
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.c-radio__input:focus + .c-radio__span::before {
+    outline: 2px solid #3498db;
+}
+
