@@ -63,3 +63,17 @@
 .u-padding__table__more {
     padding: 20px 55px 25px 0;
 }
+
+.u-padding__access {
+    padding: 80px 0 140px 0;
+    @include fw.mq(tab) {
+        padding: 50px 0 40px 0;
+    }
+}
+
+.u-padding__access__address {
+    padding: 50px 0 40px 220px;
+    @include fw.mq(tab) {
+        padding: 20px;
+    }
+}

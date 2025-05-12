@@ -383,7 +383,7 @@ html {
 body {
   color: #000;
   font-size: 1.6rem;
-  font-family: "EB Garamond", "Zen Old Mincho", serif;
+  font-family: "EB Garamond", "Zen Old Mincho", "Noto Serif JP", serif;
   background-color: rgba(83, 7, 0, 0.1);
 }
 
@@ -958,6 +958,96 @@ a, span {
   line-height: 1.65;
 }
 
+.p-access {
+  position: relative;
+  z-index: -20;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(../../../../assets/img/access/access-bg-img.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/access/access-bg-img.png);
+}
+
+.p-access__contents {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .p-access__contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.p-access__map {
+  width: 600px;
+  height: 400px;
+}
+@media screen and (max-width: 768px) {
+  .p-access__map {
+    width: 315px;
+    height: 300px;
+  }
+}
+
+.p-access__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.p-access__address-box {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  z-index: -10;
+  width: 54.348%;
+  color: #fff;
+  background-color: #530700;
+}
+@media screen and (max-width: 768px) {
+  .p-access__address-box {
+    position: static;
+    width: 100%;
+  }
+}
+
+.p-access__izakaya-name {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.p-access__address-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+  line-height: 1.5625;
+}
+
+.p-access__address-telephone {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+  line-height: 1.5625;
+}
+
+.p-access__telephone-number {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+  line-height: 1;
+}
+
+.p-access__address-email {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+  line-height: 1.5625;
+}
+
 .c-title__fv {
   position: absolute;
   z-index: 10;
@@ -1176,6 +1266,31 @@ a, span {
   margin-right: 20px;
 }
 
+.u-margin__access {
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .u-margin__access {
+    margin-bottom: 40px;
+  }
+}
+
+.u-margin__access__izakaya-name {
+  margin-bottom: 10px;
+}
+
+.u-margin__access__address-text {
+  margin-bottom: 10px;
+}
+
+.u-margin__address-telephone {
+  margin-bottom: 20px;
+}
+
+.u-margin__address-email {
+  margin-left: 10px;
+}
+
 .u-padding__catchphrase {
   padding: 130px 0;
 }
@@ -1254,6 +1369,24 @@ a, span {
 
 .u-padding__table__more {
   padding: 20px 55px 25px 0;
+}
+
+.u-padding__access {
+  padding: 80px 0 140px 0;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__access {
+    padding: 50px 0 40px 0;
+  }
+}
+
+.u-padding__access__address {
+  padding: 50px 0 40px 220px;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__access__address {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {

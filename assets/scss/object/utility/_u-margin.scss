@@ -115,3 +115,27 @@
 .u-margin__table__text {
     margin-right: 20px;
 }
+
+// アクセス
+.u-margin__access {
+    margin-bottom: 70px;
+    @include fw.mq(tab) {
+        margin-bottom: 40px;
+    }
+}
+
+.u-margin__access__izakaya-name {
+    margin-bottom: 10px;
+}
+
+.u-margin__access__address-text {
+    margin-bottom: 10px;
+}
+
+.u-margin__address-telephone {
+    margin-bottom: 20px;
+}
+
+.u-margin__address-email {
+    margin-left: 10px;
+}
