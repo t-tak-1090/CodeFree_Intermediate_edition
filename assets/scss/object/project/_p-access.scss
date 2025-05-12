@@ -1,0 +1,80 @@
+@use "../../global/forward" as fw;
+
+.p-access {
+    position: relative;
+    z-index: -20;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/access/access-bg-img.png);
+}
+
+.p-access__contents {
+    position: relative;
+    display: flex;
+    @include fw.mq(tab) {
+        flex-direction: column;
+    }
+}
+
+.p-access__map {
+    width: 600px;
+    height: 400px;
+    @include fw.mq(tab) {
+        width: 315px;
+        height: 300px;
+    }
+}
+
+.p-access__map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.p-access__address-box {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    z-index: -10;
+    width: 54.348%;
+    color: #fff;
+    background-color: #530700;
+    @include fw.mq(tab) {
+        position: static;
+        width: 100%;
+    }
+}
+
+.p-access__izakaya-name {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: calc(33 / 20);
+}
+
+.p-access__address-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Noto Serif JP", serif;
+    line-height: calc(25 / 16);
+}
+
+.p-access__address-telephone {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Noto Serif JP", serif;
+    line-height: calc(25 / 16);
+}
+
+.p-access__telephone-number {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: "Noto Serif JP", serif;
+    line-height: calc(25 / 25);
+}
+
+.p-access__address-email {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Noto Serif JP", serif;
+    line-height: calc(25 / 16);
+}
+
