@@ -77,3 +77,33 @@
         padding: 20px;
     }
 }
+
+.u-padding__reservation {
+    padding: 80px 0;
+    @include fw.mq(tab) {
+        padding: 50px 0;
+    }
+}
+
+.u-padding__reservation__contents {
+    padding: 0 80px;
+    @include fw.mq(tab) {
+        padding: 0;
+    }
+}
+
+.u-padding__input {
+    padding: 10px 20px;
+}
+
+.u-padding__select {
+    padding: 10px 20px;
+}
+
+.u-padding__textarea {
+    padding: 10px 20px;
+}
+
+.u-padding__textarea__privacy {
+    padding: 40px;
+}

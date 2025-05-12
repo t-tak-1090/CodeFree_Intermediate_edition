@@ -1,0 +1,56 @@
+@use "../../global/forward" as fw;
+
+.c-checkbox__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.c-checkbox__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.c-checkbox__label {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.c-checkbox__span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.c-checkbox__input:checked + .c-checkbox__span::before {
+    border-color: #3498db;
+}
+
+.c-checkbox__input:checked + .c-checkbox__span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%) rotate(45deg);
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+}
+
+.c-checkbox__input:focus + .c-checkbox__span::before {
+    outline: 2px solid #3498db;
+}

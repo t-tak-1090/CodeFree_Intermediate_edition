@@ -1,0 +1,22 @@
+@use "../../global/forward" as fw;
+
+.c-button__submit {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    padding: 10px 20px;
+    background-color: #530700;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: calc(33 / 20);
+    text-align: center;
+    border: 1px solid #530700;
+    transition: all 0.3s ease;
+}
+
+.c-button__submit:hover {
+    background-color: #fff;
+    color: #530700;
+    
+}

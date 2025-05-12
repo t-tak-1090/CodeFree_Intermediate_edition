@@ -314,7 +314,162 @@
             </div>
         </section>
 
-        </div>
+        <!-- ご予約・お問い合わせ -->
+        <section class="p-reservation u-padding">
+            <div class="l-container">
+                <h2 class="c-title u-margin__reservation">
+                    <p class="c-title__text-ja">ご予約・お問い合わせ</p>
+                    <p class="c-title__text-en">Reservation / Contact</p>
+                </h2>
+                <div class="p-reservation__contents u-padding__reservation__contents">
+                    <div class="p-reservation__text-box u-margin__reservation__text-box">
+                        <p class="p-reservation__text">
+                            ご予約は前日までの受付となります。<br>
+                            2営業日以内にメールにてご連絡いたします。*は入力必須項目となります。
+                        </p>
+                    </div>
+
+                    <div class="p-form">
+                        <form action="submit" method="post">
+                            <div class="p-form__item u-margin__form__item">
+                                <label class="c-label__title" for="name">お名前*</label>
+                                <input class="c-input__name u-padding__input" type="text" id="name" name="name" placeholder="例：北村太郎" required>
+                            </div>
+                            <div class="p-form__item u-margin__form__item">
+                                <label class="c-label__title" for="radio">種別</label>
+                                <div class="p-form__radio-wrapper">
+                                    <label class="c-radio__label" for="reserve">
+                                        <input class="c-radio__input" type="radio" id="reserve" name="type" value="ご予約" checked>
+                                        <span class="c-radio__span">ご予約</span>
+                                    </label>
+                                    <label class="c-radio__label" for="contact">
+                                        <input class="c-radio__input" type="radio" id="contact" name="type" value="お問い合わせ">
+                                        <span class="c-radio__span">お問い合わせ</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="p-form__item u-margin__form__item">
+                                <label class="c-label__title" for="email">メールアドレス*</label>
+                                <input class="c-input__email u-padding__input" type="email" id="email" name="email" placeholder="例：aaaaaaaa@gmail.com" required>
+                            </div>
+                            <div class="p-form__item u-margin__form__item">
+                                <label class="c-label__title" for="course-select">コース</label>
+                                <div class="p-form__select-wrapper">
+                                    <select class="c-select u-padding__select" name="course" id="course-select">
+                                        <option value="創作寿司">【創作寿司】30,000円</option>
+                                        <option value="肉料理">【肉料理】25,000円</option>
+                                        <option value="日本酒飲み比べ">【日本酒飲み比べ】20,000円</option>
+                                        <option value="スイーツ盛">【スイーツ盛】15,000円</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="p-form__item__textarea u-margin__form__item">
+                                <label class="c-label__title" for="content">内容*</label>
+                                <textarea class="c-textarea u-padding__textarea" type="textarea" name="content" id="content" required></textarea>
+                            </div>
+                            <div class="p-form__item u-margin__form__item">
+                                <label class="c-label__title" for="about">何を見て当居酒屋を知りましたか？ (複数回答可)　*
+                                    <div class="c-checkbox__wrapper u-margin__form__item-checkbox">
+                                        <label class="c-checkbox__label" for="about1">
+                                            <input class="c-checkbox__input" type="checkbox" id="about1" name="about[]" value="インターネット">
+                                            <span class="c-checkbox__span">インターネット</span>
+                                        </label>
+                                        <label class="c-checkbox__label" for="about2">
+                                            <input class="c-checkbox__input" type="checkbox" id="about2" name="about[]" value="チラシ">
+                                            <span class="c-checkbox__span">チラシ</span>
+                                        </label>
+                                        <label class="c-checkbox__label" for="about3">
+                                            <input class="c-checkbox__input" type="checkbox" id="about3" name="about[]" value="口コミ">
+                                            <span class="c-checkbox__span">口コミ</span>
+                                        </label>
+                                        <label class="c-checkbox__label" for="about4">
+                                            <input class="c-checkbox__input" type="checkbox" id="about4" name="about[]" value="看板">
+                                            <span class="c-checkbox__span">看板</span>
+                                        </label>
+                                    </div>
+                                    <div class="c-checkbox__wrapper">
+                                        <label class="c-checkbox__label" for="about5">
+                                            <input class="c-checkbox__input" type="checkbox" id="about5" name="about[]" value="各種SNS">
+                                            <span class="c-checkbox__span">各種SNS</span>
+                                        </label>
+                                        <label class="c-checkbox__label" for="about6">
+                                            <input class="c-checkbox__input" type="checkbox" id="about6" name="about[]" value="紹介">
+                                            <span class="c-checkbox__span">紹介</span>
+                                        </label>
+                                        <label class="c-checkbox__label" for="about7">
+                                            <input class="c-checkbox__input" type="checkbox" id="about7" name="about[]" value="通りがかり">
+                                            <span class="c-checkbox__span">通りがかり</span>
+                                        </label>
+                                        <label class="c-checkbox__label" for="about8">
+                                            <input class="c-checkbox__input" type="checkbox" id="about8" name="about[]" value="その他">
+                                            <span class="c-checkbox__span">その他</span>
+                                        </label>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="p-form__item_textarea u-margin__form__item">
+                                <label class="c-label__title" for="privacy">個人情報保護方針</label>
+                                <textarea class="c-textarea__privacy u-padding__textarea__privacy" name="privacy" id="privacy" readonly>
+個人情報取扱事業者の氏名又は名称(法24条1項1号)
+和風居酒屋　源
+
+個人情報の取り扱い
+弊社は、個人情報保護に関連する法令を遵守し、お客様からご提供いただく個人情報を、細心の注意を払って取り扱っております。このプライバシーポリシーでは、当社におけるお客様の個人情報の取扱いについてご説明しております。
+
+個人情報の利用目的(法18条、15条)
+弊社は建築物の設計、施工を主とした当社業務ならびにアフターサービスをさせていただく上で、お客様の個人情報を原則として次の利用目的の範囲内で利用させていただきます。なお、アンケート用紙・ウェブサイトの他のページ等で特に利用目的を定めている場合は、その利用目的を含みます。
+
+・お客様からご注文頂いた工事を適切に完成させるため及び物品の納品をさせて頂くため、お客様へ弊社が取扱う商品を積極的に提案する営業活動のため、商品及びサービスの提供に関する手続(融資・申請・保証・保険・登記など)の支援、取次ぎのため
+・お客様に弊社が取扱う商品、企業活動、イベント等に関するお知らせをお届けするため (カタログ、ご提案資料、展示のご案内、各種刊行物など)
+・見学会等へご来場のお客様へのご商談、ご来場日時の確認のため
+・商品やサービスについてお客さまからいただいたご意見を活用するため
+・商品のアフターサービス、メンテナンス等のためにお客さまと接触するため
+・その他お客さまから寄せられたご意見、ご要望にお応えするため、及び弊社が取扱う商品、サービス等の向上を図るため
+
+保有個人データ利用目的(法24条1項2号)
+・当社が建築したお客様宅のアフターメンテナンスを行うため
+・当社がお客様に提供するサービスにおいて利用するため
+・お客様に特別なサービスや新しい商品などの情報を的確にお知らせするため
+・お客様に合ったサービスを提供するため
+・当社の建築した住宅の利用状況や利用環境などに関する調査を実施して客観的にお客様の満足度を把握するため
+・必要に応じてお客様に連絡を行うため
+・会計監査上の確認作業を行うため
+
+個人情報の安全対策(法20条)
+お客様の個人情報を安全に管理・運営するよう鋭意努力しており、個人情報への外部からの不正なアクセス、個人情報の紛失・毀損・破壊・改ざん・漏えい、社外への不正な流出などへの危険防止に対する合理的かつ適切な安全対策を行っています。また個人情報を取り扱う部門ごとに情報管理責任者を置き、個人情報の適切な管理に努めるとともに、情報セキュリティに関する規程を設けて社員への周知徹底を実施しています。
+
+第三者への提供(法23条)
+個人情報は、以下のいずれかに該当する場合を除いて、いかなる第三者にも開示・提供いたしません。
+・お客さまの同意がある場合。
+・お客様個人を識別することができない状態で開示する場合。
+・業務を円滑に進める等の理由で外部事業者に取扱いを委託する場合。(この場合には、十分な保護水準を備えている委託先を選定し、漏えいや再提供を防止するために契約により義務づける等の方法によって、適切な管理を実施します)
+・法令等により開示を要求された場合
+・人の生命、身体又は財産の保護のために必要であって、お客様の同意を得ることが困難である場合
+・国の機関や地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、お客様の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがある場合
+
+個人情報の開示手続(法25条)
+お客様本人の個人情報に関する保有データの開示請求があった場合には、ご本人であることを運転免許証・パスポート等の身分証明書で確認させていただいた上、本人確認が終了後、速やかに開示させていただきます。
+
+個人情報の訂正等(法26条)
+前項の開示手続きにより、弊社が保有する保有個人データ内容に事実と異なる記載がある場合には、訂正、変更又は削除の手続きを取らせて頂きます。
+
+プライバシーポリシーに関するお問合せ先
+弊社の個人情報の取扱いに関するお問合せは、下記までお問い合せください。
+
+社名	和風居酒屋　源
+住所	東京都中央区港○丁目○-○
+電話	000-000-0000
+FAX	000-000-0000
+メールアドレス	info@example.com
+                                </textarea>
+                            </div>
+                            <button class="c-button__submit u-margin__button__submit" type="submit">内容に同意して送信</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
