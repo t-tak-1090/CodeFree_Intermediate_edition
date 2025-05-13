@@ -72,3 +72,18 @@
     font-weight: 500;
     line-height: calc(33 / 20);
 }
+
+/* 画像を右に揺らすアニメーション */
+@keyframes shakeRight {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* テキストと画像の両方にホバーでアニメーション適用 */
+.p-table__more:hover::after,
+.p-table__more:hover .p-table__link {
+  animation: shakeRight 0.4s ease-in-out;
+}

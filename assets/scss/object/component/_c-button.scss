@@ -19,3 +19,22 @@
     background-color: #fff;
     color: #530700;
 }
+
+.c-button__pagetop {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: #530700;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.c-button__icon {
+    width: 25px;
+}
