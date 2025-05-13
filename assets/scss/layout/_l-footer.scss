@@ -1,0 +1,43 @@
+@use "../global/forward" as fw;
+
+.l-footer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/footer/footer-bg-img.png);
+}
+
+.l-footer__container {
+    width: calc(100% - 360px);
+    max-width: 720px;
+    margin-inline: auto;
+    @include fw.mq(tab) {
+        width: calc(100% - 60px);
+    }
+}
+
+.l-footer__logo-wrapper {
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.l-footer__logo {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: calc(33 / 20);
+}
+
+.l-footer__copyright {
+    text-align: center;
+    background-color: #530700;
+}
+
+.l-footer__copyright-text {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: calc(33 / 20);
+    @include fw.mq(tab) {
+        line-height: calc(28 / 20);
+    }
+}
+

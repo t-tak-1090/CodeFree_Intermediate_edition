@@ -1,7 +1,10 @@
 @use "../global/forward" as fw;
 
 .l-container {
-    width: 85.185%;
+    width: calc(100% - 160px); // 85.185%
     max-width: 920px;
     margin-inline: auto;
+    @include fw.mq(tab) {
+        width: calc(100% - 60px); // 95.454%
+    }
 }

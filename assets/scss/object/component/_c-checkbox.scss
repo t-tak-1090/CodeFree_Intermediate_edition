@@ -5,6 +5,12 @@
     justify-content: space-between;
     align-items: center;
     gap: 25px;
+    @include fw.mq(tab) {
+        flex-wrap: wrap;
+        justify-content: first baseline;
+        gap: 0;
+        
+    }
 }
 
 .c-checkbox__input {
@@ -20,6 +26,11 @@
     padding-left: 30px;
     margin-bottom: 5px;
     cursor: pointer;
+    @include fw.mq(tab) {
+        flex: 1 1 50%;
+        font-size: 1.6rem;
+        line-height: calc(25 / 16);
+    }
 }
 
 .c-checkbox__span::before {

@@ -82,3 +82,22 @@
         cursor: pointer;
     }
 }
+
+.p-nav__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 640px;
+    @include fw.mq(tab) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.p-nav__footer-link {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(33 / 18);
+}

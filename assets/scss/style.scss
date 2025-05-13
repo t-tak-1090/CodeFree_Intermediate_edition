@@ -42,6 +42,8 @@
 @use "object/project/p-reservation";
 // フォームCSS
 @use "object/project/p-form";
+// SNSCSS
+@use "object/project/p-sns";
 
 // componentフォルダ
 // タイトルCSS
@@ -61,13 +63,10 @@
 // ボタンCSS
 @use "object/component/c-button";
 
-
-
-// ボタンCSS
-
 //  utilityフォルダ
 // ユーティリティCSS
 @use "object/utility/u-background";
 @use "object/utility/u-margin";
 @use "object/utility/u-padding";
 @use "object/utility/u-pc-only";
+@use "object/utility/u-sp-only";

@@ -434,10 +434,61 @@ a, span {
   font-weight: 500;
 }
 
+.l-footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(../../../../assets/img/footer/footer-bg-img.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/footer/footer-bg-img.png);
+}
+
+.l-footer__container {
+  width: calc(100% - 360px);
+  max-width: 720px;
+  margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__container {
+    width: calc(100% - 60px);
+  }
+}
+
+.l-footer__logo-wrapper {
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.l-footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.l-footer__copyright {
+  text-align: center;
+  background-color: #530700;
+}
+
+.l-footer__copyright-text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+@media screen and (max-width: 768px) {
+  .l-footer__copyright-text {
+    line-height: 1.4;
+  }
+}
+
 .l-container {
-  width: 85.185%;
+  width: calc(100% - 160px);
   max-width: 920px;
   margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .l-container {
+    width: calc(100% - 60px);
+  }
 }
 
 .l-inner__catchphrase {
@@ -572,6 +623,36 @@ a, span {
     line-height: 1.8333333333;
     cursor: pointer;
   }
+}
+
+.p-nav__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 640px;
+}
+@media screen and (max-width: 768px) {
+  .p-nav__footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.p-nav__footer-link {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.8333333333;
 }
 
 .p-hamburger {
@@ -1065,6 +1146,29 @@ a, span {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .p-form__item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.p-form__item-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
 .p-form__radio-wrapper,
 .p-form__select-wrapper {
@@ -1073,6 +1177,11 @@ a, span {
 
 .p-form__select-wrapper {
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .p-form__select-wrapper {
+    width: 100%;
+  }
 }
 
 .p-form__select-wrapper::after {
@@ -1100,6 +1209,23 @@ a, span {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+}
+
+.p-sns__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.p-sns__item {
+  width: 30px;
 }
 
 .c-title__fv {
@@ -1165,6 +1291,32 @@ a, span {
   letter-spacing: 0.3em;
 }
 
+.c-title__reservation-text-ja {
+  color: #530700;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.3em;
+}
+@media screen and (max-width: 768px) {
+  .c-title__reservation-text-ja {
+    letter-spacing: 0em;
+  }
+}
+
+.c-title__reservation-text-en {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.65;
+  letter-spacing: 0.3em;
+}
+@media screen and (max-width: 768px) {
+  .c-title__reservation-text-en {
+    letter-spacing: 0.2em;
+  }
+}
+
 .c-label__title {
   font-size: 2rem;
   font-weight: 500;
@@ -1182,6 +1334,12 @@ a, span {
   width: 78.75%;
   background-color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .c-input__name,
+  .c-input__email {
+    width: 100%;
+  }
+}
 
 .c-radio__input {
   position: absolute;
@@ -1196,6 +1354,11 @@ a, span {
   margin-right: 60px;
   margin-bottom: 5px;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .c-radio__label {
+    margin-right: 10px;
+  }
 }
 
 .c-radio__span::before {
@@ -1262,6 +1425,16 @@ a, span {
           align-items: center;
   gap: 25px;
 }
+@media screen and (max-width: 768px) {
+  .c-checkbox__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: first baseline;
+        -ms-flex-pack: first baseline;
+            justify-content: first baseline;
+    gap: 0;
+  }
+}
 
 .c-checkbox__input {
   position: absolute;
@@ -1276,6 +1449,15 @@ a, span {
   padding-left: 30px;
   margin-bottom: 5px;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .c-checkbox__label {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    font-size: 1.6rem;
+    line-height: 1.5625;
+  }
 }
 
 .c-checkbox__span::before {
@@ -1539,9 +1721,23 @@ a, span {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+  .u-margin__form__item-checkbox {
+    margin-bottom: 0;
+  }
+}
 
 .u-margin__button__submit {
   margin-inline: auto;
+}
+
+.u-margin__footer__logo-wrapper {
+  margin-bottom: 30px;
+}
+
+.u-margin__footer__nav {
+  margin-inline: auto;
+  margin-bottom: 30px;
 }
 
 .u-padding__catchphrase {
@@ -1676,8 +1872,41 @@ a, span {
   padding: 40px;
 }
 
+.u-padding__footer {
+  padding: 80px 0;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__footer {
+    padding: 50px 0;
+  }
+}
+
+.u-padding__footer__logo-wrapper {
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__footer__logo-wrapper {
+    padding-bottom: 20px;
+  }
+}
+
+.u-padding__footer__copyright {
+  padding: 30px 0;
+}
+@media screen and (max-width: 768px) {
+  .u-padding__footer__copyright {
+    padding: 20px 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .u-pc-only {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .u-sp-only {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
