@@ -1,0 +1,7 @@
+@use "../../global/forward" as fw;
+
+.u-sp-only {
+    @include fw.mq(tab) {
+        display: block;
+    }
+}

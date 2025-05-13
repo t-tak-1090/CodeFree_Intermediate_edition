@@ -162,8 +162,20 @@
 .u-margin__form__item-checkbox {
     margin-top: 10px;
     margin-bottom: 10px;
+    @include fw.mq(tab) {
+        margin-bottom: 0;
+    }
 }
 
 .u-margin__button__submit {
     margin-inline: auto;
+}
+
+.u-margin__footer__logo-wrapper {
+    margin-bottom: 30px;
+}
+
+.u-margin__footer__nav {
+    margin-inline: auto;
+    margin-bottom: 30px;
 }

@@ -318,8 +318,8 @@
         <section class="p-reservation u-padding">
             <div class="l-container">
                 <h2 class="c-title u-margin__reservation">
-                    <p class="c-title__text-ja">ご予約・お問い合わせ</p>
-                    <p class="c-title__text-en">Reservation / Contact</p>
+                    <p class="c-title__reservation-text-ja">ご予約・お問い合わせ</p>
+                    <p class="c-title__reservation-text-en">Reservation / Contact</p>
                 </h2>
                 <div class="p-reservation__contents u-padding__reservation__contents">
                     <div class="p-reservation__text-box u-margin__reservation__text-box">
@@ -335,7 +335,7 @@
                                 <label class="c-label__title" for="name">お名前*</label>
                                 <input class="c-input__name u-padding__input" type="text" id="name" name="name" placeholder="例：北村太郎" required>
                             </div>
-                            <div class="p-form__item u-margin__form__item">
+                            <div class="p-form__item-radio u-margin__form__item">
                                 <label class="c-label__title" for="radio">種別</label>
                                 <div class="p-form__radio-wrapper">
                                     <label class="c-radio__label" for="reserve">
@@ -472,7 +472,60 @@ FAX	000-000-0000
 
     </main>
 
-    <footer>
+    <!-- フッター -->
+    <footer id="footer" class="l-footer">
+        <div class="l-footer__container u-padding__footer">
+            <div class="l-footer__logo-wrapper u-padding__footer__logo-wrapper u-margin__footer__logo-wrapper">
+                <a class="l-footer__logo" href="">和食居酒屋　源</a>
+            </div>
+            <ul class="p-nav__footer u-margin__footer__nav">
+                <li class="p-nav__footer-item">
+                    <a class="p-nav__footer-link" href="">はじめに</a>
+                </li>
+                <li class="p-nav__footer-item">
+                    <a class="p-nav__footer-link" href="">いちおし</a>
+                </li>
+                <li class="p-nav__footer-item">
+                    <a class="p-nav__footer-link" href="">コース</a>
+                </li>
+                <li class="p-nav__footer-item">
+                    <a class="p-nav__footer-link" href="">お知らせ</a>
+                </li>
+                <li class="p-nav__footer-item">
+                    <a class="p-nav__footer-link" href="">アクセス</a>
+                </li>
+                <li class="p-nav__footer-item">
+                    <a class="p-nav__footer-link" href="">ご予約・お問い合わせ</a>
+                </li>
+            </ul>
+            <ul class="p-sns__list">
+                <li class="p-sns__item">
+                    <a class="p-sns__link" href="">
+                        <img class="p-sns__icon" src="assets/img/footer/icon-twitter.png" alt="Twitter">
+                    </a>
+                </li>
+                <li class="p-sns__item">
+                    <a class="p-sns__link" href="">
+                        <img class="p-sns__icon" src="assets/img/footer/icon-facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li class="p-sns__item">
+                    <a class="p-sns__link" href="">
+                        <img class="p-sns__icon" src="assets/img/footer/icon-youtube.png" alt="Youtube">
+                    </a>
+                </li>
+                <li class="p-sns__item">
+                    <a class="p-sns__link" href="">
+                        <img class="p-sns__icon" src="assets/img/footer/icon-instagram.png" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="l-footer__copyright u-padding__footer__copyright">
+            <p class="l-footer__copyright-text">
+                &copy;Copyright0000　<br class="u-sp-only">wasyokuizakaya gen
+            </p>
+        </div>
 
     </footer>
 

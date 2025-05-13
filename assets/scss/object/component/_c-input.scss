@@ -10,4 +10,7 @@
 .c-input__email {
     width: 78.75%;
     background-color: #fff;
+    @include fw.mq(tab) {
+        width: 100%;
+    }
 }
