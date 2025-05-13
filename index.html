@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- フォントの読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Serif+JP:wght@200..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Serif+JP:wght@200..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- aos.js -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <!-- ヘッダー -->
@@ -25,24 +27,24 @@
             <!-- PCナビゲーション -->
             <nav class="p-nav-pc">
                 <ul class="p-nav-pc__list">
-                    <li class="p-nav-pc__item"><a href="">はじめに</a></li>
-                    <li class="p-nav-pc__item"><a href="">いちおし</a></li>
-                    <li class="p-nav-pc__item"><a href="">コース</a></li>
-                    <li class="p-nav-pc__item"><a href="">お知らせ</a></li>
-                    <li class="p-nav-pc__item"><a href="">アクセス</a></li>
-                    <li class="p-nav-pc__item"><a href="">ご予約・お問い合わせ</a></li>
+                    <li class="p-nav-pc__item"><a href="#header">はじめに</a></li>
+                    <li class="p-nav-pc__item"><a href="#recommendation">いちおし</a></li>
+                    <li class="p-nav-pc__item"><a href="#course">コース</a></li>
+                    <li class="p-nav-pc__item"><a href="#news">お知らせ</a></li>
+                    <li class="p-nav-pc__item"><a href="#access">アクセス</a></li>
+                    <li class="p-nav-pc__item"><a href="#reservation">ご予約・お問い合わせ</a></li>
                 </ul>
             </nav>
 
             <!-- SPナビゲーション -->
             <nav class="p-nav-sp">
                 <ul class="p-nav-sp__list">
-                    <li class="p-nav-sp__item"><a href="">はじめに</a></li>
-                    <li class="p-nav-sp__item"><a href="">いちおし</a></li>
-                    <li class="p-nav-sp__item"><a href="">コース</a></li>
-                    <li class="p-nav-sp__item"><a href="">お知らせ</a></li>
-                    <li class="p-nav-sp__item"><a href="">アクセス</a></li>
-                    <li class="p-nav-sp__item"><a href="">ご予約・お問い合わせ</a></li>
+                    <li class="p-nav-sp__item"><a href="#header">はじめに</a></li>
+                    <li class="p-nav-sp__item"><a href="#recommendation">いちおし</a></li>
+                    <li class="p-nav-sp__item"><a href="#course">コース</a></li>
+                    <li class="p-nav-sp__item"><a href="#news">お知らせ</a></li>
+                    <li class="p-nav-sp__item"><a href="#access">アクセス</a></li>
+                    <li class="p-nav-sp__item"><a href="#reservation">ご予約・お問い合わせ</a></li>
                 </ul>
             </nav>
 
@@ -83,10 +85,10 @@
         </div>
 
         <!-- キャッチフレーズ -->
-        <section class="p-catchphrase u-padding__catchphrase">
+        <section class="p-catchphrase js-catchphrase u-padding__catchphrase">
             <div class="u-opacity__catchphrase">
                 <div class="l-container">
-                    <div class="l-inner__catchphrase">
+                    <div class="l-inner__catchphrase" data-aos="fade-in">
                         <h2 class="c-title__catchphrase u-margin__catchphrase">
                             五感を刺激する<br>
                             本来の和食を
@@ -109,13 +111,13 @@
         </section>
 
         <!-- いちおし -->
-        <section class="p-recommendation u-padding">
+        <section id="recommendation" class="p-recommendation u-padding">
             <div class="l-container">
-                <h2 class="c-title u-margin__recommendation">
+                <h2 class="c-title u-margin__recommendation" data-aos="fade-in">
                     <p class="c-title__text-ja">いちおし</p>
                     <p class="c-title__text-en">Recommendation</p>
                 </h2>
-                <div class="p-recommendation__contents--left u-margin__recommendation__contents--left">
+                <div class="p-recommendation__contents--left u-margin__recommendation__contents--left" data-aos="fade-in">
                     <img class="p-recommendation__contents-img u-margin__recommendation__contents-img" src="assets/img/recommendation/recommendation-img01.png" alt="日本全国の旬の素材">
                     <p class="p-recommendation__extra u-margin__recommendation__extra">厳選した食材</p>
                     <div class="p-recommendation__text-box--left u-padding__recommendation__text-box">
@@ -133,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="p-recommendation__contents--right u-margin__recommendation__contents--right">
+                <div class="p-recommendation__contents--right u-margin__recommendation__contents--right" data-aos="fade-in">
                     <img class="p-recommendation__contents-img u-margin__recommendation__contents-img" src="assets/img/recommendation/recommendation-img02.png" alt="料理に合わせた日本酒">
                     <p class="p-recommendation__extra">こだわりの徳利とおちょこ</p>
                     <div class="p-recommendation__text-box--right u-padding__recommendation__text-box">
@@ -151,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="p-recommendation__contents--left u-margin__recommendation__contents--end">
+                <div class="p-recommendation__contents--left u-margin__recommendation__contents--end" data-aos="fade-in">
                     <img class="p-recommendation__contents-img u-margin__recommendation__contents-img" src="assets/img/recommendation/recommendation-img03.png" alt="季節を感じるお部屋で特別な空間を">
                     <p class="p-recommendation__extra">２名席【桜】</p>
                     <div class="p-recommendation__text-box--left u-padding__recommendation__text-box">
@@ -172,19 +174,19 @@
         </section>
 
         <!-- コース -->
-        <section class="p-course u-padding__course">
+        <section id="course" class="p-course u-padding__course">
             <div class="l-container">
-                <h2 class="c-title u-margin__course">
+                <h2 class="c-title u-margin__course" data-aos="fade-in">
                     <p class="c-title__text-ja">コース</p>
                     <p class="c-title__text-en">Course</p>
                 </h2>
-                <ul class="p-course__list">
+                <ul class="p-course__list" data-aos="fade-in">
                     <li class="p-course__item">
                         <div class="u-margin__course__item-img">
-                            <img src="assets/img/course/course-img01.png" alt="創作寿司">
+                            <img class="js-popup" src="assets/img/course/course-img01.png" data-modal="assets/img/course/modal-img01.png" alt="創作寿司">
                         </div>
                         <div class="p-course__item-text-box">
-                            <p class="p-course__item-text">
+                            <p class="p-course__item-text js-popup">
                                 【創作寿司】<br class="u-pc-only">
                                 30,000円
                             </p>
@@ -192,10 +194,10 @@
                     </li>
                     <li class="p-course__item">
                         <div class="u-margin__course__item-img">
-                            <img src="assets/img/course/course-img02.png" alt="肉料理">
+                            <img class="js-popup" src="assets/img/course/course-img02.png" data-modal="assets/img/course/modal-img02.png" alt="肉料理">
                         </div>
                         <div class="p-course__item-text-box">
-                            <p class="p-course__item-text">
+                            <p class="p-course__item-text js-popup">
                                 【肉料理】<br class="u-pc-only">
                                 25,000円
                             </p>
@@ -203,10 +205,10 @@
                     </li>
                     <li class="p-course__item">
                         <div class="u-margin__course__item-img">
-                            <img src="assets/img/course/course-img03.png" alt="日本酒飲み比べ">
+                            <img class="js-popup" src="assets/img/course/course-img03.png" data-modal="assets/img/course/modal-img03.png" alt="日本酒飲み比べ">
                         </div>
                         <div class="p-course__item-text-box">
-                            <p class="p-course__item-text">
+                            <p class="p-course__item-text js-popup">
                                 【日本酒飲み比べ】<br class="u-pc-only">
                                 20,000円
                             </p>
@@ -214,10 +216,10 @@
                     </li>
                     <li class="p-course__item">
                         <div class="u-margin__course__item-img">
-                            <img src="assets/img/course/course-img04.png" alt="スイーツ盛">
+                            <img class="js-popup" src="assets/img/course/course-img04.png" data-modal="assets/img/course/modal-img04.png" alt="スイーツ盛">
                         </div>
                         <div class="p-course__item-text-box">
-                            <p class="p-course__item-text">
+                            <p class="p-course__item-text js-popup">
                                 【スイーツ盛】<br class="u-pc-only">
                                 15,000円
                             </p>
@@ -225,16 +227,26 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- モーダル本体 -->
+            <div id="js-modal" class="p-course__modal">
+                <div class="p-course__modal-content">
+                    <span id="js-modal-close" class="modal__close">&times;</span>
+                    <img id="js-modal-img" class="is-modal-img" src="" alt="">
+                    <p id="js-modal-text" class="is-modal-text"></p>
+                </div>
+            </div>
+
         </section>
 
         <!-- お知らせ -->
-        <section class="p-news u-padding">
+        <section id="news" class="p-news u-padding">
             <div class="l-container">
-                <h2 class="c-title u-margin__news">
+                <h2 class="c-title u-margin__news" data-aos="fade-in">
                     <p class="c-title__text-ja">お知らせ</p>
                     <p class="c-title__text-en">News</p>
                 </h2>
-                <div class="p-news__contents">
+                <div class="p-news__contents" data-aos="fade-in">
                     <table class="p-table">
                         <tbody>
                             <tr>
@@ -285,13 +297,13 @@
         </section>
 
         <!-- アクセス -->
-        <section class="p-access u-padding__access">
+        <section id="access" class="p-access u-padding__access">
             <div class="l-container">
-                <h2 class="c-title u-margin__access">
+                <h2 class="c-title u-margin__access" data-aos="fade-in">
                     <p class="c-title__text-ja">アクセス</p>
                     <p class="c-title__text-en">Access</p>
                 </h2>
-                <div class="p-access__contents">
+                <div class="p-access__contents" data-aos="fade-in">
                     <div class="p-access__map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1310.4103721030872!2d139.7765515891995!3d35.6728316331236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018895df5420e33%3A0x989bb483f1b21f54!2z44GT44G-44Gk!5e0!3m2!1sja!2sjp!4v1747002009866!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -315,13 +327,13 @@
         </section>
 
         <!-- ご予約・お問い合わせ -->
-        <section class="p-reservation u-padding">
+        <section id="reservation" class="p-reservation u-padding">
             <div class="l-container">
-                <h2 class="c-title u-margin__reservation">
+                <h2 class="c-title u-margin__reservation" data-aos="fade-in">
                     <p class="c-title__reservation-text-ja">ご予約・お問い合わせ</p>
                     <p class="c-title__reservation-text-en">Reservation / Contact</p>
                 </h2>
-                <div class="p-reservation__contents u-padding__reservation__contents">
+                <div class="p-reservation__contents u-padding__reservation__contents" data-aos="fade-in">
                     <div class="p-reservation__text-box u-margin__reservation__text-box">
                         <p class="p-reservation__text">
                             ご予約は前日までの受付となります。<br>
@@ -470,6 +482,11 @@ FAX	000-000-0000
             </div>
         </section>
 
+        <!-- ページトップ -->
+        <button class="c-button__pagetop js-pageTop">
+            <img class="c-button__icon" src="assets/img/page-to-top-img.png" alt="ページトップ">
+        </button>
+
     </main>
 
     <!-- フッター -->
@@ -480,22 +497,22 @@ FAX	000-000-0000
             </div>
             <ul class="p-nav__footer u-margin__footer__nav">
                 <li class="p-nav__footer-item">
-                    <a class="p-nav__footer-link" href="">はじめに</a>
+                    <a class="p-nav__footer-link" href="#header">はじめに</a>
                 </li>
                 <li class="p-nav__footer-item">
-                    <a class="p-nav__footer-link" href="">いちおし</a>
+                    <a class="p-nav__footer-link" href="#recommendation">いちおし</a>
                 </li>
                 <li class="p-nav__footer-item">
-                    <a class="p-nav__footer-link" href="">コース</a>
+                    <a class="p-nav__footer-link" href="#course">コース</a>
                 </li>
                 <li class="p-nav__footer-item">
-                    <a class="p-nav__footer-link" href="">お知らせ</a>
+                    <a class="p-nav__footer-link" href="#news">お知らせ</a>
                 </li>
                 <li class="p-nav__footer-item">
-                    <a class="p-nav__footer-link" href="">アクセス</a>
+                    <a class="p-nav__footer-link" href="#access">アクセス</a>
                 </li>
                 <li class="p-nav__footer-item">
-                    <a class="p-nav__footer-link" href="">ご予約・お問い合わせ</a>
+                    <a class="p-nav__footer-link" href="#reservation">ご予約・お問い合わせ</a>
                 </li>
             </ul>
             <ul class="p-sns__list">
@@ -529,8 +546,11 @@ FAX	000-000-0000
 
     </footer>
 
+    <!-- aos.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>
