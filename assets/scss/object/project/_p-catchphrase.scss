@@ -6,10 +6,18 @@
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/catchphrase/catchphrase-bg-img.png);
 }
 
+.p-catchphrase__text-box {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 38px;
+    @include fw.mq(tab) {
+        gap: 0;
+    }
+}
+
 .p-catchphrase__text {
     font-size: 1.8rem;
     font-weight: 500;
-    line-height: 2.3;
     letter-spacing: 0.37em;
     writing-mode: vertical-rl;
     @include fw.mq(tab) {

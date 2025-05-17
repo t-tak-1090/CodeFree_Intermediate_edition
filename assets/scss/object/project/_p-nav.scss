@@ -3,7 +3,7 @@
 .p-nav-pc__list {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 22px;
     @include fw.mq("tab") {
         display: none;
     }
@@ -11,7 +11,7 @@
 .p-nav-pc__item a {
     position: relative;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: clamp(1.20rem, 1.92vw + -0.27rem, 1.80rem);
     font-weight: 500;
 }
 .p-nav-pc__item a::after {
@@ -93,13 +93,18 @@
     @include fw.mq(tab) {
         flex-wrap: wrap;
         justify-content: center;
+        row-gap: 5px;
+        column-gap: 23px;
     }
 }
 
 .p-nav__footer-link {
-    font-size: 1.8rem;
+    font-size: clamp(1.20rem, 1.92vw + -0.27rem, 1.80rem);
     font-weight: 500;
     line-height: calc(33 / 18);
+    @include fw.mq(tab) {
+        font-size: 1.8rem;
+    }
 }
 
 .p-nav__footer-link:hover {

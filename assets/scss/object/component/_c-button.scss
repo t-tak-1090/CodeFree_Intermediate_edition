@@ -13,6 +13,9 @@
     text-align: center;
     border: 1px solid #530700;
     transition: all 0.3s ease;
+    @include fw.mq(tab) {
+        width: 315px;
+    }
 }
 
 .c-button__submit:hover {
@@ -33,6 +36,10 @@
     border-radius: 50%;
     cursor: pointer;
     transition: .3s;
+    @include fw.mq(tab) {
+        right: 30px;
+        bottom: 30px;
+    }
 }
 
 .c-button__icon {

@@ -17,7 +17,7 @@
 }
 
 .p-access__map {
-    width: 600px;
+    width: 65.2173913%;
     height: 400px;
     @include fw.mq(tab) {
         width: 315px;
@@ -32,7 +32,7 @@
 
 .p-access__address-box {
     position: absolute;
-    bottom: -60px;
+    bottom: -67px;
     right: 0;
     z-index: -10;
     width: 54.348%;
@@ -41,40 +41,56 @@
     @include fw.mq(tab) {
         position: static;
         width: 100%;
+        max-width: 315px;
     }
 }
 
 .p-access__izakaya-name {
-    font-size: 2rem;
+    font-size: clamp(1.60rem, 1.28vw + 0.62rem, 2.00rem);
     font-weight: 500;
     line-height: calc(33 / 20);
+    @include fw.mq(tab) {
+        font-size: 2rem;
+    }
 }
 
 .p-access__address-text {
-    font-size: 1.6rem;
+    font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
     font-weight: 500;
     font-family: "Noto Serif JP", serif;
     line-height: calc(25 / 16);
+    @include fw.mq(tab) {
+        font-size: 1.6rem;
+    }
 }
 
 .p-access__address-telephone {
-    font-size: 1.6rem;
+    font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
     font-weight: 500;
     font-family: "Noto Serif JP", serif;
     line-height: calc(25 / 16);
+    @include fw.mq(tab) {
+        font-size: 1.6rem;
+    }
 }
 
 .p-access__telephone-number {
-    font-size: 2.5rem;
+    font-size: clamp(1.60rem, 2.88vw + -0.61rem, 2.50rem);
     font-weight: 500;
     font-family: "Noto Serif JP", serif;
     line-height: calc(25 / 25);
+    @include fw.mq(tab) {
+        font-size: 2.5rem;
+    }
 }
 
 .p-access__address-email {
-    font-size: 1.6rem;
+    font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
     font-weight: 500;
     font-family: "Noto Serif JP", serif;
     line-height: calc(25 / 16);
+    @include fw.mq(tab) {
+        font-size: 1.6rem;
+    }
 }
 

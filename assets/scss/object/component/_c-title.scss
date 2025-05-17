@@ -3,8 +3,8 @@
 .c-title__fv {
     position: absolute;
     z-index: 10;
-    top: 50%;
-    left: 5%;
+    top: 51.5%;
+    left: 5.8%;
     transform: translateY(-50%);
     color: #fff;
     font-size: 4rem;
@@ -13,9 +13,11 @@
     letter-spacing: 0.3em;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     @include fw.mq("tab") {
+        top: 50.5%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
+        padding-left: 10px;
         font-size: 3rem;
         line-height: calc(60 / 30);
         text-align: center;
@@ -53,6 +55,9 @@
     font-weight: 500;
     line-height: calc(33 / 20);
     letter-spacing: 0.3em;
+    @include fw.mq(tab) {
+        letter-spacing: 0.2em;
+    }
 }
 
 .c-title__reservation-text-ja {

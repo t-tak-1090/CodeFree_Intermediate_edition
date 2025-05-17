@@ -9,7 +9,6 @@
         flex-wrap: wrap;
         justify-content: first baseline;
         gap: 0;
-        
     }
 }
 
@@ -25,6 +24,7 @@
     width: 200px;
     padding-left: 30px;
     margin-bottom: 5px;
+    font-size: 1.8rem;
     cursor: pointer;
     @include fw.mq(tab) {
         flex: 1 1 50%;
