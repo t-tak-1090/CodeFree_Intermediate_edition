@@ -1,10 +1,10 @@
 @use "../../global/forward" as fw;
 
 .u-margin__catchphrase {
-    margin-left: 60px;
+    margin-left: 70px;
     @include fw.mq(tab) {
-        margin-bottom: 40px;
-        margin-left: 0;
+        margin-bottom: 43px;
+        margin-left: -2px;
     }
 }
 
@@ -12,21 +12,31 @@
 .u-margin__recommendation {
     margin-bottom: 60px;
     @include fw.mq(tab) {
-        margin-bottom: 40px;
+        margin-bottom: 37px;
     }
+}
+
+.u-margin__recommendation__text-ja {
+    margin-left: 10px;
+}
+
+.u-margin__recommendation__text-en {
+    margin-top: 3px;
+    margin-left: 6px;
 }
 
 .u-margin__recommendation__contents--left,
 .u-margin__recommendation__contents--right {
     margin-bottom: 140px;
     @include fw.mq(tab) {
-        margin-bottom: 50px;
+        margin-bottom: 62px;
     }
 }
 
 .u-margin__recommendation__contents--end {
-    margin-bottom: 50px;
+    margin-bottom: 28px;
     @include fw.mq(tab) {
+        margin-inline: auto;
         margin-bottom: 0;
     }
 }
@@ -34,7 +44,7 @@
 .u-margin__recommendation__contents--left {
     margin-inline: 0 auto;
     @include fw.mq(tab) {
-        margin-inline: 0;
+        margin-inline: auto;
     }
 }
 
@@ -45,7 +55,21 @@
 }
 
 .u-margin__recommendation__contents-img {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    @include fw.mq(tab) {
+        margin-bottom: 5px;
+    }
+}
+
+.u-margin__recommendation__contents-img2 {
+    margin-bottom: 22px;
+    @include fw.mq(tab) {
+        margin-bottom: 5px;
+    }
+}
+
+.u-margin__recommendation__contents-img3 {
+    margin-bottom: 21px;
     @include fw.mq(tab) {
         margin-bottom: 5px;
     }
@@ -60,6 +84,11 @@
 
 .u-margin__recommendation__contents--right {
     margin-inline: auto 0;
+    margin-bottom: 129px;
+    @include fw.mq(tab) {
+        margin-inline: auto;
+        margin-bottom: 62px;
+    }
 }
 
 .u-margin__recommendation__text-box-inner--right {
@@ -70,36 +99,77 @@
 }
 
 .u-margin__recommendation__text {
-    margin-bottom: 20px;
+    margin-top: 7px;
     @include fw.mq(tab) {
         margin-bottom: 5px;
     }
 }
 
+.u-margin__recommendation__text02 {
+    margin-top: 7px;
+    @include fw.mq(tab) {
+        margin-bottom: 0;
+    }
+}
+
+.u-margin__recommendation__text03 {
+    margin-top: 7px;
+    @include fw.mq(tab) {
+        margin-top: 11px;
+        margin-bottom: 10px;
+    }
+}
+
 // コース
 .u-margin__course {
-    margin-bottom: 70px;
+    margin-bottom: 67px;
+    margin-left: 10px;
     @include fw.mq(tab) {
         margin-bottom: 40px;
     }
+}
+
+.u-margin__course__text-ja {
+    margin-bottom: 3px;
+}
+
+.u-margin__course__text-en {
+    margin-left: -5px;
+    letter-spacing: 0.2em;
 }
 
 .u-margin__course__item-img {
     margin-bottom: 20px;
     @include fw.mq(tab) {
-        margin-bottom: 10px;
+        margin-bottom: 9px;
     }
 }
 
 // お知らせ
 .u-margin__news {
-    margin-bottom: 70px;
+    margin-bottom: 67px;
     @include fw.mq(tab) {
-        margin-bottom: 40px;
+        margin-bottom: 37px;
     }
 }
 
+.u-margin__news__text-ja {
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+
+.u-margin__news__text-en {
+    margin-left: 5px;
+    letter-spacing: 0.2em;
+}
+
 // テーブル
+.u-margin__table {
+    @include fw.mq(tab) {
+        margin-inline: auto;
+    }
+}
+
 .u-margin__table__date--top {
     margin-left: 20px;
 }
@@ -118,40 +188,130 @@
 
 // アクセス
 .u-margin__access {
-    margin-bottom: 70px;
+    margin-bottom: 66px;
     @include fw.mq(tab) {
-        margin-bottom: 40px;
+        margin-bottom: 38px;
+    }
+}
+
+.u-margin__access__text-ja {
+    margin-top: 1px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+}
+
+.u-margin__access__text-en {
+    margin-left: 5px;
+    letter-spacing: 0.2em;
+}
+
+.u-margin__access__map {
+    @include fw.mq(tab) {
+        margin-inline: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.u-margin__access__address-box {
+    @include fw.mq(tab) {
+        margin-inline: auto;
     }
 }
 
 .u-margin__access__izakaya-name {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .u-margin__access__address-text {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .u-margin__address-telephone {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    @include fw.mq(tab) {
+        margin-bottom: 10px;
+    }
+}
+
+.u-margin__address-email02 {
+    margin-bottom: 6.5px;
 }
 
 .u-margin__address-email {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .u-margin__reservation {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
+}
+
+.u-margin__reservation__text-ja {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    @include fw.mq(tab) {
+        margin-left: 3px;
+    }
+}
+
+.u-margin__reservation__text-en {
+    margin-left: 5px;
+    letter-spacing: 0.2em;
 }
 
 .u-margin__reservation__text-box {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+    @include fw.mq(tab) {
+        margin-bottom: 28px;
+    }
 }
 
 .u-margin__form__item {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
     @include fw.mq(tab) {
-        margin-bottom: 30px;
+        margin-bottom: 38px;
+    }
+}
+
+.u-margin__form__item02 {
+    margin-bottom: 61px;
+    @include fw.mq(tab) {
+        margin-bottom: 37px;
+    }
+}
+
+.u-margin__form__item03 {
+    margin-bottom: 46px;
+    @include fw.mq(tab) {
+        margin-bottom: 18px;
+    }
+}
+
+.u-margin__form__item04 {
+    margin-bottom: 43px;
+    @include fw.mq(tab) {
+        margin-bottom: 24px;
+    }
+}
+
+.u-margin__form__item05 {
+    margin-bottom: 80px;
+    @include fw.mq(tab) {
+        margin-bottom: 63px;
+    }
+}
+
+.u-margin__form__item06 {
+    margin-bottom: 56px;
+    @include fw.mq(tab) {
+        margin-bottom: 29px;
+    }
+}
+
+.u-margin__form__item07 {
+    margin-bottom: 56px;
+    @include fw.mq(tab) {
+        margin-bottom: 32px;
     }
 }
 
@@ -161,9 +321,16 @@
 
 .u-margin__form__item-checkbox {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     @include fw.mq(tab) {
         margin-bottom: 0;
+    }
+}
+
+.u-margin__form__item-checkbox__span {
+    margin-left: 9px;
+    @include fw.mq(tab) {
+        margin-left: 1px;
     }
 }
 
@@ -173,9 +340,15 @@
 
 .u-margin__footer__logo-wrapper {
     margin-bottom: 30px;
+    @include fw.mq(tab) {
+        margin-bottom: 21px;
+    }
 }
 
 .u-margin__footer__nav {
     margin-inline: auto;
     margin-bottom: 30px;
+    @include fw.mq(tab) {
+        margin-bottom: 25px;
+    }
 }

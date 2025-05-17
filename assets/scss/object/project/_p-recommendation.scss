@@ -10,6 +10,7 @@
     width: 65.2173913%;
     @include fw.mq(tab) {
         width: 100%;
+        max-width: 350px;
     }
 }
 
@@ -37,21 +38,27 @@
 }
 
 .p-recommendation__text-box--left,
+.p-recommendation__text-box--left2,
 .p-recommendation__text-box--right {
     position: absolute;
     top: 150px;
     z-index: -10;
-    width: 100%;
-    max-width: 500px;
-    height: 250px;
+    width: 83.3333333%;
     background-color: #530700;
     @include fw.mq(tab) {
         position: static;
+        width: 100%;
         height: auto;
     }
 }
 
 .p-recommendation__text-box--left {
+    top: 152px;
+    left: 70%;
+}
+
+.p-recommendation__text-box--left2 {
+    top: 147px;
     left: 70%;
 }
 
@@ -61,13 +68,17 @@
 }
 
 .p-recommendation__text-box-inner {
-    width: 100%;
-    max-width: 275px;
+    width: 56%;
+    // max-width: 275px;
+    @include fw.mq(tab) {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .p-recommendation__text {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: clamp(1.60rem, 2.88vw + -0.61rem, 2.50rem);
     font-weight: 600;
     line-height: calc(33 / 25);
     @include fw.mq(tab) {
@@ -76,12 +87,39 @@
     }
 }
 
-.p-recommendation__description {
+.p-recommendation__text02 {
     color: #fff;
-    font-size: 1.6rem;
-    line-height: calc(25 / 16);
+    font-size: clamp(1.60rem, 2.88vw + -0.61rem, 2.50rem);
+    font-weight: 600;
+    line-height: calc(33 / 25);
+    @include fw.mq(tab) {
+        font-size: 2rem;
+        line-height: calc(27 / 20);
+    }
 }
 
+.p-recommendation__description {
+    color: #fff;
+    font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
+    line-height: calc(25 / 16);
+    margin-top: 16px;
+    @include fw.mq(tab) {
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+}
+
+.p-recommendation__description2 {
+    color: #fff;
+    font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
+    font-family: "Zen Old Mincho";
+    line-height: calc(25 / 16);
+    margin-top: 13px;
+    @include fw.mq(tab) {
+        margin-top: 9px;
+        font-size: 1.6rem;
+    }
+}
 
 
 
