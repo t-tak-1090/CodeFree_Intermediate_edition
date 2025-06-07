@@ -1,10 +1,11 @@
 @use "../../global/forward" as fw;
 
-.c-checkbox__wrapper {
+.p-checkbox__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 0; /* 3.125% */
+    padding: 5px 0 0 0;
     @include fw.mq(tab) {
         flex-wrap: wrap;
         justify-content: first baseline;
@@ -12,28 +13,29 @@
     }
 }
 
-.c-checkbox__input {
+.p-checkbox__input {
     position: absolute;
     opacity: 0;
     z-index: -1;
 }
 
-.c-checkbox__label {
+.p-checkbox__label {
     position: relative;
     display: inline-block;
     width: 200px;
-    padding-left: 30px;
+    padding-left: 40px;
     margin-bottom: 5px;
-    font-size: 1.8rem;
+    font-size: clamp(1.60rem, 0.64vw + 1.11rem, 1.80rem);
     cursor: pointer;
     @include fw.mq(tab) {
         flex: 1 1 50%;
+        padding-left: 30px;
         font-size: 1.6rem;
         line-height: calc(25 / 16);
     }
 }
 
-.c-checkbox__span::before {
+.p-checkbox__span::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -45,11 +47,11 @@
     background-color: #fff;
 }
 
-.c-checkbox__input:checked + .c-checkbox__span::before {
+.p-checkbox__input:checked + .p-checkbox__span::before {
     border-color: #3498db;
 }
 
-.c-checkbox__input:checked + .c-checkbox__span::after {
+.p-checkbox__input:checked + .p-checkbox__span::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -62,6 +64,6 @@
     border-width: 0 2px 2px 0;
 }
 
-.c-checkbox__input:focus + .c-checkbox__span::before {
+.p-checkbox__input:focus + .p-checkbox__span::before {
     outline: 2px solid #3498db;
 }

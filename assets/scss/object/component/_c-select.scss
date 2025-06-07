@@ -2,6 +2,10 @@
 
 .c-select {
     width: 100%;
-    background-color: #fff;
+    padding: 15px 20px;
     font-weight: 500;
+    background-color: #fff;
+    @include fw.mq(tab) {
+        padding: 9px 20px;
+    }
 }

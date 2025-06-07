@@ -1,9 +1,10 @@
 @use "../../global/forward" as fw;
 
-.c-button__submit {
+.p-button__submit {
     display: block;
     width: 300px;
     max-width: 100%;
+    margin-inline: auto;
     padding: 10px 20px;
     background-color: #530700;
     color: #fff;
@@ -18,12 +19,12 @@
     }
 }
 
-.c-button__submit:hover {
+.p-button__submit:hover {
     background-color: #fff;
     color: #530700;
 }
 
-.c-button__pagetop {
+.p-button__pagetop {
     position: fixed;
     right: 60px;
     bottom: 60px;
@@ -42,6 +43,6 @@
     }
 }
 
-.c-button__icon {
+.p-button__icon {
     width: 25px;
 }

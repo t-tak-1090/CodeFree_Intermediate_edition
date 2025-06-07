@@ -1,15 +1,187 @@
 @use "../../global/forward" as fw;
 
 .p-news {
+    padding: 80px 0;
     background-color: rgba(83, 7, 0, 0.1);
+    @include fw.mq(tab) {
+        padding: 55px 0 49px 0;
+    }
+}
+
+.p-news__title {
+    margin-bottom: 67px;
+    @include fw.mq(tab) {
+        margin-bottom: 37px;
+    }
+}
+
+.p-news__title-ja {
+    margin-bottom: 3px;
+    margin-left: 10px;
+    letter-spacing: 0.3em;
+}
+
+.p-news__title-en {
+    margin-left: 5px;
+    letter-spacing: 0.2em;
 }
 
 .p-news__contents {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
     @include fw.mq(tab) {
         flex-direction: column;
-        gap: 24px;
+        gap: 49px;
     }
+}
+
+.p-news__contents-list {
+    width: 50%;
+    max-width: 430px;
+    @include fw.mq(tab) {
+        width: 100%;
+        max-width: 315px;
+        margin-inline: auto;
+    }
+}
+
+.p-news__list-header {
+    padding: 10px 20px;
+    background-color: #530700;
+}
+
+.p-news__list-header p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: calc(33 / 20);
+}
+
+.p-news__list-body {
+    padding: 0 4.65% 0 4.65%;
+    background-color: #fff;
+    @include fw.mq(tab) {
+        padding: 0 20px 0 20px;
+    }
+}
+
+.p-news__list-item {
+    display: flex;
+    align-items: first baseline;
+    gap: 59px; /* 15.384% */
+    // padding: 1px 0 15px 0;
+    border-bottom: 1px solid #530700;
+    @include fw.mq(tab) {
+        gap: 25px;
+        padding: 14px 0;
+    }
+}
+
+.p-news .p-news__contents-list:nth-of-type(1) .p-news__list-item:nth-child(1) {
+    padding: 0px 0 13px 0;
+}
+
+.p-news .p-news__contents-list:nth-of-type(1) .p-news__list-item:nth-child(2) {
+    padding: 1px 0 15px 0;
+}
+
+.p-news__list-item time {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Zen Old Mincho', serif;
+    line-height: calc(33 / 16);
+}
+
+.p-news__list-item p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Zen Old Mincho', serif;
+    line-height: calc(25 / 18);
+}
+
+.p-news .p-news__contents-list:nth-of-type(1) .p-news__list-item:nth-child(1) p {
+    padding: 27px 0 0 7px;
+    @include fw.mq(tab) {
+        padding: 25px 0 2px 5px;
+    }
+}
+
+.p-news .p-news__contents-list:nth-of-type(1) .p-news__list-item:nth-child(2) p {
+    padding: 16px 0 0 10px;
+    @include fw.mq(tab) {
+        padding: 16px 0 0 8px;
+    }
+}
+
+.p-news .p-news__contents-list:nth-of-type(1) .p-news__list-item:nth-child(3) p {
+    padding: 19px 0 13px 0;
+    @include fw.mq(tab) {
+        padding: 0 0 0 0;
+    }
+}
+
+.p-news .p-news__contents-list:nth-of-type(2) .p-news__list-item:nth-child(1) p {
+    padding: 27px 0 13px 14px;
+    @include fw.mq(tab) {
+        padding: 11px 0 0 9px;
+    }
+}
+
+.p-news .p-news__contents-list:nth-of-type(2) .p-news__list-item:nth-child(2) p {
+    padding: 19px 0 13px 20px;
+    @include fw.mq(tab) {
+        padding: 4px 0 0 13px;
+    }
+}
+
+.p-news .p-news__contents-list:nth-of-type(2) .p-news__list-item:nth-child(3) p {
+    padding: 19px 0 13px 10px;
+    @include fw.mq(tab) {
+        padding: 5px 7px 0 5px;
+    }
+}
+
+.p-news__list-more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.p-news__list-more span {
+    position: relative;
+    color: #530700;
+    padding: 18px 36px 24px 0;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'EB Garamond', serif;
+    line-height: calc(33 / 20);
+}
+
+.p-news__list-more span::after {
+    content: "";
+    position: absolute;
+    top: 46%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/news/news-img01.png);
+}
+
+/* 画像を右に揺らすアニメーション */
+@keyframes shakeRight {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+  /* テキストと画像の両方にホバーでアニメーション適用 */
+.p-news__list-more:hover span::after,
+.p-news__list-more:hover span {
+    animation: shakeRight 0.4s ease-in-out;
 }

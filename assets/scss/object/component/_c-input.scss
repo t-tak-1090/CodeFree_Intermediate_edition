@@ -1,14 +1,8 @@
 @use "../../global/forward" as fw;
 
-.c-input__name-wrapper {
-    display: inline-block;
-    width: 100%;
-    background-color: #fff;
-}
-
-.c-input__name,
-.c-input__email {
+.c-input {
     width: 78.75%;
+    padding: 15px 20px;
     background-color: #fff;
     @include fw.mq(tab) {
         width: 100%;

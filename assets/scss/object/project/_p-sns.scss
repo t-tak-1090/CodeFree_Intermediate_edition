@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-bottom: 80px;
+    @include fw.mq(tab) {
+        margin-bottom: 50px;
+    }
 }
 
 .p-sns__item {
