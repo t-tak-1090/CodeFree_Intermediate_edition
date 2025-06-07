@@ -514,7 +514,7 @@ a, span {
   width: 100%;
   max-width: 1080px;
   margin-inline: auto;
-  padding-inline: 7.407%;
+  padding-inline: 80px; /* 7.407% */
 }
 @media screen and (max-width: 768px) {
   .l-inner {
@@ -970,6 +970,7 @@ a, span {
 .p-recommend__contents {
   position: relative;
   width: 65.2173913%;
+  max-width: 600px;
   margin-bottom: 141px;
 }
 @media screen and (max-width: 768px) {
@@ -1067,6 +1068,7 @@ a, span {
   position: absolute;
   z-index: -10;
   width: 83.3333333%;
+  max-width: 500px;
   padding: 7.3% 0;
   background-color: #530700;
 }
