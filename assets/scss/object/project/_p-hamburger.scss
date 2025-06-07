@@ -14,9 +14,9 @@
         transition: all 0.3s;
     }
 }
-.c-hamburger__line,
-.c-hamburger__line::before,
-.c-hamburger__line::after {
+.p-hamburger__line,
+.p-hamburger__line::before,
+.p-hamburger__line::after {
     @include fw.mq("tab") {
         content: "";
         position: absolute;
@@ -27,36 +27,36 @@
         transition: all 0.3s;
     }
 }
-.c-hamburger__line {
+.p-hamburger__line {
     @include fw.mq("tab") {
         top: 23px;
         left: 20px;
     }
 }
-.c-hamburger__line::before {
+.p-hamburger__line::before {
     @include fw.mq("tab") {
         top: 10px;
         transition: all 0.3s;
     }
 }
-.c-hamburger__line::after {
+.p-hamburger__line::after {
     @include fw.mq("tab") {
         bottom: 10px;
         transition: all 0.3s;
     }
 }
-.p-hamburger.open .c-hamburger__line {
+.p-hamburger.open .p-hamburger__line {
     @include fw.mq("tab") {
         background-color: transparent;
     }
 }
-.p-hamburger.open .c-hamburger__line::before {
+.p-hamburger.open .p-hamburger__line::before {
     @include fw.mq("tab") {
         top: 0;
         transform: rotate(45deg);
     }
 }
-.p-hamburger.open .c-hamburger__line::after {
+.p-hamburger.open .p-hamburger__line::after {
     @include fw.mq("tab") {
         bottom: 0;
         transform: rotate(-45deg);

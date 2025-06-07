@@ -1,7 +1,44 @@
 @use "../../global/forward" as fw;
 
 .p-reservation {
+    padding: 80px 0 76px 0;
     background-color: rgba(83, 7, 0, 0.1);
+    @include fw.mq(tab) {
+        padding: 53px 0 48px 0;
+    }
+}
+
+.p-reservation__title {
+    margin-bottom: 38px;
+}
+
+.p-reservation__title-ja {
+    margin-bottom: 3px;
+    margin-left: 10px;
+    letter-spacing: 0.3em;
+    @include fw.mq(tab) {
+        margin-left: 0;
+        letter-spacing: 0em;
+    }
+}
+
+.p-reservation__title-en {
+    margin-left: 5px;
+    letter-spacing: 0.2em;
+}
+
+.p-reservation__contents {
+    padding: 0 6.5217%;
+    @include fw.mq(pc) {
+        padding: 0;
+    }
+}
+
+.p-reservation__text-box {
+    margin-bottom: 35px;
+    @include fw.mq(tab) {
+        margin-bottom: 27px;
+    }
 }
 
 .p-reservation__text {

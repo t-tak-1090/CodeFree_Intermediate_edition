@@ -1,127 +1,228 @@
 @use "../../global/forward" as fw;
 
-.p-recommendation {
+.p-recommend {
+    padding: 84px 0 101px 0;
     background-color: rgba(83, 7, 0, 0.1);
-}
-
-.p-recommendation__contents--left,
-.p-recommendation__contents--right {
-    position: relative;
-    width: 65.2173913%;
     @include fw.mq(tab) {
-        width: 100%;
-        max-width: 350px;
+        padding: 50px 0 24px 0;
     }
 }
 
-.p-recommendation__contents--left {
-    text-align: left;
+.p-recommend__title {
+    margin-bottom: 60px;
+    letter-spacing: 0.3em;
+    @include fw.mq(tab) {
+        margin-bottom: 37px;
+    }
 }
 
-.p-recommendation__contents--right {
+.p-recommend__title-ja {
+    margin-left: 10px;
+    letter-spacing: 0.3em;
+    @include fw.mq(tab) {
+        margin-left: 8px;
+    }
+}
+
+.p-recommend__title-en {
+    margin-top: 3px;
+    margin-left: 6px;
+    letter-spacing: 0.3em;
+    @include fw.mq(tab) {
+        letter-spacing: 0.2em;
+    }
+}
+
+.p-recommend__contents {
+    position: relative;
+    width: 65.2173913%;
+    margin-bottom: 141px;
+    @include fw.mq(tab) {
+        width: 100%;
+        max-width: 350px;
+        margin-inline: auto;
+        margin-bottom: 62px;
+    }
+}
+
+.p-recommend .p-recommend__contents:nth-child(odd) {
+    margin-inline: auto 0;
     text-align: right;
     @include fw.mq(tab) {
+        margin-inline: auto;
         text-align: left;
     }
 }
 
-.p-recommendation__contents-img {
+.p-recommend .p-recommend__contents:nth-child(even) {
+    text-align: left;
+}
+
+.p-recommend .p-recommend__contents:nth-of-type(1) {
+    margin-bottom: 141px;
     @include fw.mq(tab) {
-        height: 220px;
+        margin-bottom: 55px;
     }
 }
 
-.p-recommendation__extra {
+.p-recommend .p-recommend__contents:nth-of-type(2) {
+    margin-bottom: 129px;
+    @include fw.mq(tab) {
+        margin-bottom: 53px;
+    }
+}
+
+.p-recommend .p-recommend__contents:nth-of-type(3) {
+    margin-bottom: 29px;
+}
+
+.p-recommend__contents-img {
+    @include fw.mq(tab) {
+        height: 220px;
+        margin-bottom: 5px;
+    }
+}
+
+.p-recommend__contents:nth-of-type(1) .p-recommend__contents-img {
+    margin-bottom: 16px;
+    @include fw.mq(tab) {
+        margin-bottom: 6px;
+    }
+}
+
+.p-recommend__contents:nth-of-type(2) .p-recommend__contents-img {
+    margin-bottom: 21px;
+    @include fw.mq(tab) {
+        margin-bottom: 4px;
+    }
+}
+
+.p-recommend__contents:nth-of-type(3) .p-recommend__contents-img {
+    margin-bottom: 21px;
+    @include fw.mq(tab) {
+        margin-bottom: 7px;
+    }
+}
+
+.p-recommend__extra {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: calc(25 / 16);
+    @include fw.mq(tab) {
+        margin-bottom: 5px;
+    }
 }
 
-.p-recommendation__text-box--left,
-.p-recommendation__text-box--left2,
-.p-recommendation__text-box--right {
+.p-recommend__text-box {
     position: absolute;
-    top: 150px;
     z-index: -10;
     width: 83.3333333%;
+    padding: 7.3% 0;
     background-color: #530700;
     @include fw.mq(tab) {
         position: static;
         width: 100%;
         height: auto;
+        padding: 16px 0 10px 20px;
     }
 }
 
-.p-recommendation__text-box--left {
+.p-recommend .p-recommend__contents:nth-of-type(1) .p-recommend__text-box {
     top: 152px;
     left: 70%;
 }
 
-.p-recommendation__text-box--left2 {
-    top: 147px;
-    left: 70%;
-}
-
-.p-recommendation__text-box--right {
+.p-recommend .p-recommend__contents:nth-of-type(2) .p-recommend__text-box {
+    top: 146px;
     right: 70%;
     text-align: left;
 }
 
-.p-recommendation__text-box-inner {
-    width: 56%;
-    // max-width: 275px;
+.p-recommend .p-recommend__contents:nth-of-type(3) .p-recommend__text-box {
+    top: 146px;
+    left: 70%;
+}
+
+.p-recommend .p-recommend__contents:nth-of-type(odd) .p-recommend__text,
+.p-recommend .p-recommend__contents:nth-of-type(odd) .p-recommend__description {
+    margin-inline: auto 5px;
     @include fw.mq(tab) {
-        width: 100%;
-        max-width: 100%;
+        margin-inline: 0;
     }
 }
 
-.p-recommendation__text {
+.p-recommend .p-recommend__contents:nth-of-type(even) .p-recommend__text,
+.p-recommend .p-recommend__contents:nth-of-type(even) .p-recommend__description {
+    margin-inline: 0 auto;
+    padding-left: 8%;
+    @include fw.mq(tab) {
+        padding-left: 0;
+    }
+}
+
+.p-recommend__text {
+    width: 60%;
+    max-width: 275px;
+    margin-top: 7px;
     color: #fff;
     font-size: clamp(1.60rem, 2.88vw + -0.61rem, 2.50rem);
     font-weight: 600;
     line-height: calc(33 / 25);
     @include fw.mq(tab) {
+        width: 100%;
         font-size: 2rem;
         line-height: calc(33 / 20);
     }
 }
 
-.p-recommendation__text02 {
-    color: #fff;
-    font-size: clamp(1.60rem, 2.88vw + -0.61rem, 2.50rem);
-    font-weight: 600;
-    line-height: calc(33 / 25);
+.p-recommend .p-recommend__contents:nth-of-type(1) .p-recommend__text {
     @include fw.mq(tab) {
-        font-size: 2rem;
+        margin-top: 6px;
+    }
+}
+
+.p-recommend .p-recommend__contents:nth-of-type(2) .p-recommend__text {
+    @include fw.mq(tab) {
+        margin-top: 2px;
         line-height: calc(27 / 20);
     }
 }
 
-.p-recommendation__description {
+.p-recommend .p-recommend__contents:nth-of-type(3) .p-recommend__text {
+    @include fw.mq(tab) {
+        margin-top: 5px;
+        line-height: calc(27 / 20);
+    }
+}
+
+.p-recommend__description {
+    width: 60%;
+    max-width: 275px;
     color: #fff;
     font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
+    font-family: 'Zen Old Mincho', serif;
     line-height: calc(25 / 16);
     margin-top: 16px;
     @include fw.mq(tab) {
+        width: 100%;
         font-size: 1.6rem;
-        margin-top: 0;
     }
 }
 
-.p-recommendation__description2 {
-    color: #fff;
-    font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
-    font-family: "Zen Old Mincho";
-    line-height: calc(25 / 16);
-    margin-top: 13px;
+.p-recommend .p-recommend__contents:nth-of-type(1) .p-recommend__description {
     @include fw.mq(tab) {
-        margin-top: 9px;
-        font-size: 1.6rem;
+        margin-top: 4px;
     }
 }
 
+.p-recommend .p-recommend__contents:nth-of-type(2) .p-recommend__description {
+    @include fw.mq(tab) {
+        margin-top: 10px;
+    }
+}
 
-
-
-
+.p-recommend .p-recommend__contents:nth-of-type(3) .p-recommend__description {
+    @include fw.mq(tab) {
+        margin-top: 8px;
+    }
+}

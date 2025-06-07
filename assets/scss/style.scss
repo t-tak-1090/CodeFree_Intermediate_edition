@@ -16,7 +16,6 @@
 // フッターCSS
 @use "layout/l-footer";
 // コンテンツCSS
-@use "layout/l-container";
 @use "layout/l-inner";
 
 // projectフォルダ
@@ -34,14 +33,18 @@
 @use "object/project/p-course";
 // お知らせCSS
 @use "object/project/p-news";
-// テーブルCSS
-@use "object/project/p-table";
 // アクセスCSS
 @use "object/project/p-access";
 // 予約CSS
 @use "object/project/p-reservation";
 // フォームCSS
 @use "object/project/p-form";
+// ラジオボタンCSS
+@use "object/project/p-radio";
+// チェックボックスCSS
+@use "object/project/p-checkbox";
+// ボタンCSS
+@use "object/project/p-button";
 // SNSCSS
 @use "object/project/p-sns";
 
@@ -52,21 +55,14 @@
 @use "object/component/c-label";
 // インプットCSS
 @use "object/component/c-input";
-// ラジオボタンCSS
-@use "object/component/c-radio";
 // セレクトCSS
 @use "object/component/c-select";
 // テキストエリアCSS
 @use "object/component/c-textarea";
-// チェックボックスCSS
-@use "object/component/c-checkbox";
-// ボタンCSS
-@use "object/component/c-button";
+
 
 //  utilityフォルダ
 // ユーティリティCSS
 @use "object/utility/u-background";
-@use "object/utility/u-margin";
-@use "object/utility/u-padding";
 @use "object/utility/u-pc-only";
 @use "object/utility/u-sp-only";

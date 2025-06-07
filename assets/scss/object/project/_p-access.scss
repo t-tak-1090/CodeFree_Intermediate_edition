@@ -3,9 +3,31 @@
 .p-access {
     position: relative;
     z-index: -20;
+    padding: 80px 0 146px 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/access/access-bg-img.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/catchphrase/catchphrase-bg-img.png);
+    @include fw.mq(tab) {
+        padding: 50px 0 27px 0;
+    }
+}
+
+.p-access__title {
+    margin-bottom: 66px;
+    @include fw.mq(tab) {
+        margin-bottom: 38px;
+    }
+}
+
+.p-access__title-ja {
+    margin-bottom: 6px;
+    margin-left: 10px;
+    letter-spacing: 0.3em;
+}
+
+.p-access__title-en {
+    margin-left: 5px;
+    letter-spacing: 0.2em;
 }
 
 .p-access__contents {
@@ -22,6 +44,8 @@
     @include fw.mq(tab) {
         width: 315px;
         height: 300px;
+        margin-inline: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -32,20 +56,24 @@
 
 .p-access__address-box {
     position: absolute;
-    bottom: -67px;
+    bottom: -66px;
     right: 0;
     z-index: -10;
     width: 54.348%;
+    padding: 50px 0 40px 24%;
     color: #fff;
     background-color: #530700;
     @include fw.mq(tab) {
         position: static;
         width: 100%;
         max-width: 315px;
+        margin-inline: auto;
+        padding: 20px;
     }
 }
 
 .p-access__izakaya-name {
+    margin-bottom: 4px;
     font-size: clamp(1.60rem, 1.28vw + 0.62rem, 2.00rem);
     font-weight: 500;
     line-height: calc(33 / 20);
@@ -55,6 +83,7 @@
 }
 
 .p-access__address-text {
+    margin-bottom: 12px;
     font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
     font-weight: 500;
     font-family: "Noto Serif JP", serif;
@@ -65,11 +94,13 @@
 }
 
 .p-access__address-telephone {
+    margin-bottom: 15px;
     font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
     font-weight: 500;
     font-family: "Noto Serif JP", serif;
     line-height: calc(25 / 16);
     @include fw.mq(tab) {
+        margin-bottom: 10px;
         font-size: 1.6rem;
     }
 }
@@ -85,6 +116,7 @@
 }
 
 .p-access__address-email {
+    margin-bottom: 6.5px;
     font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
     font-weight: 500;
     font-family: "Noto Serif JP", serif;
@@ -94,3 +126,6 @@
     }
 }
 
+.p-access__address-email span {
+    margin-left: 15px;
+}

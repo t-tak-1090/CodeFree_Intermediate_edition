@@ -17,12 +17,12 @@
     background-color: #530700;
 }
 
-.l-header__container {
+.l-header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 0 80px;
+    gap: 1.8518%;
+    padding: 0 7.407%;
     @include fw.mq("tab") {
         padding: 0 22px;
     }

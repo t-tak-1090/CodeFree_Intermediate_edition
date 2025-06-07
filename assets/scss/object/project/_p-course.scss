@@ -1,14 +1,36 @@
 @use "../../global/forward" as fw;
 
 .p-course {
+    padding: 84px 0 100px 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../../assets/img/course/course-bg-img.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/catchphrase/catchphrase-bg-img.png);
+    @include fw.mq(tab) {
+        padding: 53px 0 60px 0;
+    }
+}
+
+.p-course__title {
+    margin-bottom: 67px;
+    margin-left: 10px;
+    @include fw.mq(tab) {
+        margin-bottom: 40px;
+    }
+}
+
+.p-course__title-ja {
+    margin-bottom: 3px;
+    letter-spacing: 0.3em;
+}
+
+.p-course__title-en {
+    margin-left: -5px;
+    letter-spacing: 0.2em;
 }
 
 .p-course__list {
     display: flex;
-    gap: 40px;
+    gap: 4.6%;
     @include fw.mq(tab) {
         flex-direction: column;
         align-items: center;
@@ -22,6 +44,13 @@
     @include fw.mq(tab) {
         width: 100%;
         max-width: 350px;
+    }
+}
+
+.p-course__item-img {
+    margin-bottom: 20px;
+    @include fw.mq(tab) {
+        margin-bottom: 9px;
     }
 }
 
@@ -39,10 +68,14 @@
 }
 
 .p-course__item-text {
-    font-size: 1.6rem;
+    font-size: clamp(1.60rem, 0.64vw + 0.91rem, 1.60rem);
     font-weight: 500;
     font-family: "Zen Old Mincho";
     line-height: calc(25 / 16);
+}
+
+.p-course__item-text span {
+    margin-left: -4px;
 }
 
 /* モーダルの背景（黒くする部分） */
