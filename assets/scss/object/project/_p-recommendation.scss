@@ -36,6 +36,7 @@
 .p-recommend__contents {
     position: relative;
     width: 65.2173913%;
+    max-width: 600px;
     margin-bottom: 141px;
     @include fw.mq(tab) {
         width: 100%;
@@ -117,6 +118,7 @@
     position: absolute;
     z-index: -10;
     width: 83.3333333%;
+    max-width: 500px;
     padding: 7.3% 0;
     background-color: #530700;
     @include fw.mq(tab) {
