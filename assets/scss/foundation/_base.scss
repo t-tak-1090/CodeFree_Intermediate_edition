@@ -3,12 +3,19 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 body {
     color: #000;
     font-size: 1.6rem;
     font-family: "EB Garamond", "Zen Old Mincho", "Noto Serif JP", serif;
-    background-color: rgba($color: #530700, $alpha: 0.1);
+}
+body.is-fixed {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
 img {
     width: 100%;
@@ -19,6 +26,22 @@ a,span {
     display: inline-block;
 }
 
+@include fw.mq("pc") {
+    a[href^="tel:"] {
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+    }
+}
 
+textarea {
+    resize: vertical;
+}
 
+textarea.c-textarea {
+    min-height: 200px;
+}
 
+textarea.c-textarea-privacy {
+    min-height: 300px;
+}

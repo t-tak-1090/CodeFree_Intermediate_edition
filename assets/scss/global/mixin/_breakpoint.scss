@@ -1,10 +1,9 @@
 // メディアクエリ設定
 $breakpoints: (
-    "sp": "screen and (max-width: 576px)",
-    "tab": "screen and (max-width: 768px)",
-    "pc": "screen and (max-width: 992px)",
-    "x-pc": "screen and (max-width: 1200px)",
-    "xx-pc": "screen and (min-width: 1400px)",
+    "exsp": "screen and (max-width: 374px)",
+    "sp": "screen and (max-width: 767px)",
+    "pc": "screen and (min-width: 768px)",
+    "large": "screen and (max-width: 993px)",
 );
 
 @mixin mq($breakpoint: sp) {

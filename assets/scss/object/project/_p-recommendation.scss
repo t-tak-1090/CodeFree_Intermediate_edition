@@ -3,7 +3,7 @@
 .p-recommend {
     padding: 84px 0 101px 0;
     background-color: rgba(83, 7, 0, 0.1);
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         padding: 50px 0 24px 0;
     }
 }
@@ -11,7 +11,7 @@
 .p-recommend__title {
     margin-bottom: 60px;
     letter-spacing: 0.3em;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 37px;
     }
 }
@@ -19,7 +19,7 @@
 .p-recommend__title-ja {
     margin-left: 10px;
     letter-spacing: 0.3em;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-left: 8px;
     }
 }
@@ -28,7 +28,7 @@
     margin-top: 3px;
     margin-left: 6px;
     letter-spacing: 0.3em;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         letter-spacing: 0.2em;
     }
 }
@@ -38,18 +38,26 @@
     width: 65.2173913%;
     max-width: 600px;
     margin-bottom: 141px;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         width: 100%;
-        max-width: 350px;
         margin-inline: auto;
         margin-bottom: 62px;
+    }
+}
+
+.p-recommend__contents-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fw.mq("sp") {
+        flex-direction: column;
     }
 }
 
 .p-recommend .p-recommend__contents:nth-child(odd) {
     margin-inline: auto 0;
     text-align: right;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-inline: auto;
         text-align: left;
     }
@@ -61,14 +69,14 @@
 
 .p-recommend .p-recommend__contents:nth-of-type(1) {
     margin-bottom: 141px;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 55px;
     }
 }
 
 .p-recommend .p-recommend__contents:nth-of-type(2) {
     margin-bottom: 129px;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 53px;
     }
 }
@@ -78,29 +86,28 @@
 }
 
 .p-recommend__contents-img {
-    @include fw.mq(tab) {
-        height: 220px;
+    @include fw.mq("sp") {
         margin-bottom: 5px;
     }
 }
 
 .p-recommend__contents:nth-of-type(1) .p-recommend__contents-img {
     margin-bottom: 16px;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 6px;
     }
 }
 
 .p-recommend__contents:nth-of-type(2) .p-recommend__contents-img {
     margin-bottom: 21px;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 4px;
     }
 }
 
 .p-recommend__contents:nth-of-type(3) .p-recommend__contents-img {
     margin-bottom: 21px;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 7px;
     }
 }
@@ -109,7 +116,7 @@
     font-size: 1.6rem;
     font-weight: 500;
     line-height: calc(25 / 16);
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 5px;
     }
 }
@@ -121,9 +128,10 @@
     max-width: 500px;
     padding: 7.3% 0;
     background-color: #530700;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         position: static;
         width: 100%;
+        max-width: 100%;
         height: auto;
         padding: 16px 0 10px 20px;
     }
@@ -148,7 +156,7 @@
 .p-recommend .p-recommend__contents:nth-of-type(odd) .p-recommend__text,
 .p-recommend .p-recommend__contents:nth-of-type(odd) .p-recommend__description {
     margin-inline: auto 5px;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-inline: 0;
     }
 }
@@ -157,7 +165,7 @@
 .p-recommend .p-recommend__contents:nth-of-type(even) .p-recommend__description {
     margin-inline: 0 auto;
     padding-left: 8%;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         padding-left: 0;
     }
 }
@@ -167,10 +175,13 @@
     max-width: 275px;
     margin-top: 7px;
     color: #fff;
-    font-size: clamp(1.60rem, 2.88vw + -0.61rem, 2.50rem);
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: calc(33 / 25);
-    @include fw.mq(tab) {
+    @include fw.mq("large") {
+        font-size: 2rem;
+    }
+    @include fw.mq("sp") {
         width: 100%;
         font-size: 2rem;
         line-height: calc(33 / 20);
@@ -178,20 +189,20 @@
 }
 
 .p-recommend .p-recommend__contents:nth-of-type(1) .p-recommend__text {
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-top: 6px;
     }
 }
 
 .p-recommend .p-recommend__contents:nth-of-type(2) .p-recommend__text {
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-top: 2px;
         line-height: calc(27 / 20);
     }
 }
 
 .p-recommend .p-recommend__contents:nth-of-type(3) .p-recommend__text {
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-top: 5px;
         line-height: calc(27 / 20);
     }
@@ -201,30 +212,33 @@
     width: 60%;
     max-width: 275px;
     color: #fff;
-    font-size: clamp(1.20rem, 1.28vw + 0.22rem, 1.60rem);
+    font-size: 1.6rem;
     font-family: 'Zen Old Mincho', serif;
     line-height: calc(25 / 16);
     margin-top: 16px;
-    @include fw.mq(tab) {
+    @include fw.mq("large") {
+        font-size: 1.4rem;
+    }
+    @include fw.mq("sp") {
         width: 100%;
         font-size: 1.6rem;
     }
 }
 
 .p-recommend .p-recommend__contents:nth-of-type(1) .p-recommend__description {
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-top: 4px;
     }
 }
 
 .p-recommend .p-recommend__contents:nth-of-type(2) .p-recommend__description {
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-top: 10px;
     }
 }
 
 .p-recommend .p-recommend__contents:nth-of-type(3) .p-recommend__description {
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-top: 8px;
     }
 }

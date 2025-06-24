@@ -5,7 +5,8 @@
     padding: 15px 20px;
     font-weight: 500;
     background-color: #fff;
-    @include fw.mq(tab) {
+    cursor: pointer;
+    @include fw.mq("sp") {
         padding: 9px 20px;
     }
 }

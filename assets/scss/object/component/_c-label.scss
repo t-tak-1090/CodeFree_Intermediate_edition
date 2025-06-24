@@ -1,10 +1,10 @@
 @use "../../global/forward" as fw;
 
 .c-label {
-    font-size: clamp(1.60rem, 1.28vw + 0.62rem, 2.00rem);
+    font-size: 2rem;
     font-weight: 500;
     line-height: calc(33 / 20);
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         font-size: 2rem;
     }
 }

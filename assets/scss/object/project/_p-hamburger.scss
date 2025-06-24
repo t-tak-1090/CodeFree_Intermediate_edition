@@ -2,7 +2,7 @@
 
 .p-hamburger {
     display: none;
-    @include fw.mq("tab") {
+    @include fw.mq("sp") {
         position: fixed;
         top: 0;
         right: 0;
@@ -17,7 +17,7 @@
 .p-hamburger__line,
 .p-hamburger__line::before,
 .p-hamburger__line::after {
-    @include fw.mq("tab") {
+    @include fw.mq("sp") {
         content: "";
         position: absolute;
         width: 32px;
@@ -28,36 +28,36 @@
     }
 }
 .p-hamburger__line {
-    @include fw.mq("tab") {
+    @include fw.mq("sp") {
         top: 23px;
         left: 20px;
     }
 }
 .p-hamburger__line::before {
-    @include fw.mq("tab") {
+    @include fw.mq("sp") {
         top: 10px;
         transition: all 0.3s;
     }
 }
 .p-hamburger__line::after {
-    @include fw.mq("tab") {
+    @include fw.mq("sp") {
         bottom: 10px;
         transition: all 0.3s;
     }
 }
 .p-hamburger.open .p-hamburger__line {
-    @include fw.mq("tab") {
+    @include fw.mq("sp") {
         background-color: transparent;
     }
 }
 .p-hamburger.open .p-hamburger__line::before {
-    @include fw.mq("tab") {
+    @include fw.mq("sp") {
         top: 0;
         transform: rotate(45deg);
     }
 }
 .p-hamburger.open .p-hamburger__line::after {
-    @include fw.mq("tab") {
+    @include fw.mq("sp") {
         bottom: 0;
         transform: rotate(-45deg);
     }

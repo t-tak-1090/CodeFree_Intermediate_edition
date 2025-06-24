@@ -4,7 +4,7 @@
     width: 78.75%;
     padding: 15px 20px;
     background-color: #fff;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         width: 100%;
     }
 }

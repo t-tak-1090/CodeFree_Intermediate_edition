@@ -1,8 +1,8 @@
 @use "../../global/forward" as fw;
 
-.u-sp-only {
+.u-exsp-only {
     display: none;
-    @include fw.mq("sp") {
+    @include fw.mq("exsp") {
         display: block;
     }
 }

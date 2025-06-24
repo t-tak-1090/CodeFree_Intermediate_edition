@@ -6,7 +6,7 @@
     margin-bottom: 50px;
     padding: 15px 20px;
     background-color: #fff;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 30px;
     }
 }
@@ -18,9 +18,10 @@
     padding: 50px 60px 40px 40px;
     font-weight: 500;
     font-size: 1.8rem;
+    font-family: 'Zen Old Mincho', serif;
     line-height: calc(31 / 18);
     background-color: #fff;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         height: 320px;
         margin-bottom: 50px;
         padding: 30px 60px 30px 30px;
