@@ -3,34 +3,37 @@
 .p-fv {
     position: relative;
 }
+
 .p-fv__slider-01,
 .p-fv__slider-02,
 .p-fv__slider-03 {
     width: 100%;
-    height: 800px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         height: 600px;
+        object-position: center;
     }
 }
-.p-fv__slider-01 {
-    background-image: url(../img/fv/slider-img01.jpg);
-    @include fw.mq("tab") {
-        background-image: url(../img/fv/sp-slider-img01.png);
-    }
+
+.p-fv__slider-01::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.2);
 }
-.p-fv__slider-02 {
-    background-image: url(../img/fv/slider-img02.png);
-    @include fw.mq("tab") {
-        background-image: url(../img/fv/sp-slider-img02.png);
-    }
-}
-.p-fv__slider-03 {
-    background-image: url(../img/fv/slider-img03.png);
-    @include fw.mq("tab") {
-        background-image: url(../img/fv/sp-slider-img03.png);
+
+.p-fv__slider-02::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(83, 7, 0, 1), rgba(83, 7, 0, 0));
+    @include fw.mq("sp") {
+        width: 0;
     }
 }
 
@@ -46,7 +49,7 @@
     line-height: calc(70 / 40);
     letter-spacing: 0.3em;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
-    @include fw.mq("tab") {
+    @include fw.mq("sp") {
         top: 50.5%;
         left: 50%;
         transform: translate(-50%, -50%);

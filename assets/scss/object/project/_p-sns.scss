@@ -6,13 +6,25 @@
     align-items: center;
     gap: 30px;
     margin-bottom: 80px;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 50px;
     }
 }
 
 .p-sns__item {
-    width: 28px;
+    width: 40px;
+    height: 40px;
 }
 
+.p-sns__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
 
+.p-sns__link img {
+    width: 28px;
+    height: 28px;
+}

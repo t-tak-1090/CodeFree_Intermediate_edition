@@ -26,7 +26,7 @@
     font-weight: 500;
     line-height: calc(33 / 30);
     letter-spacing: 0.3em;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         letter-spacing: 0em;
     }
 }
@@ -37,7 +37,7 @@
     font-weight: 500;
     line-height: calc(33 / 20);
     letter-spacing: 0.3em;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         letter-spacing: 0.2em;
     }
 }

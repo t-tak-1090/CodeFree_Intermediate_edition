@@ -13,9 +13,12 @@
     margin-right: 52px;
     margin-bottom: 2px;
     cursor: pointer;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-right: 0;
         padding-left: 35px;
+    }
+    @include fw.mq("exsp") {
+        padding-left: 20px;
     }
 }
 
@@ -26,15 +29,22 @@
     margin-right: 52px;
     margin-bottom: 2px;
     cursor: pointer;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-right: 0;
-        padding-left: 47px;
+        margin-left: 10px;
+        padding-left: 30px;
+    }
+    @include fw.mq("exsp") {
+        padding-left: 20px;
     }
 }
 
 .p-radio__span {
     font-size: 1.8rem;
     font-family: "Zen Old Mincho";
+    @include fw.mq("exsp") {
+        font-size: 1.6rem;
+    }
 }
 
 .p-radio__span::before {

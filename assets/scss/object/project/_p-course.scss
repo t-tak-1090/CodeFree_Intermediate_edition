@@ -4,8 +4,8 @@
     padding: 84px 0 100px 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/catchphrase/catchphrase-bg-img.png);
-    @include fw.mq(tab) {
+    background-image: url(../img/catchphrase/catchphrase-bg-img.webp);
+    @include fw.mq("sp") {
         padding: 53px 0 60px 0;
     }
 }
@@ -13,7 +13,7 @@
 .p-course__title {
     margin-bottom: 67px;
     margin-left: 10px;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         margin-bottom: 40px;
     }
 }
@@ -29,46 +29,46 @@
 }
 
 .p-course__list {
-    display: flex;
-    gap: 4.6%;
-    @include fw.mq(tab) {
-        flex-direction: column;
-        align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    @include fw.mq("sp") {
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
 }
 
 .p-course__item {
-    width: 25%;
     cursor: pointer;
-    @include fw.mq(tab) {
-        width: 100%;
-        max-width: 350px;
-    }
 }
 
 .p-course__item-img {
     margin-bottom: 20px;
-    @include fw.mq(tab) {
+    transition: all 0.3s;
+    @include fw.mq("sp") {
         margin-bottom: 9px;
     }
 }
 
+.p-course__item-img:hover {
+    opacity: 0.7;
+}
+
 .p-course__item-img img {
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         height: 250px;
     }
 }
 
 .p-course__item-text-box {
     text-align: center;
-    @include fw.mq(tab) {
+    @include fw.mq("sp") {
         text-align: left;
     }
 }
 
 .p-course__item-text {
-    font-size: clamp(1.60rem, 0.64vw + 0.91rem, 1.60rem);
+    font-size: 1.6rem;
     font-weight: 500;
     font-family: "Zen Old Mincho";
     line-height: calc(25 / 16);

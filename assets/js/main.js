@@ -56,43 +56,47 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalImg = document.getElementById('js-modal-img');
     const modalText = document.getElementById('js-modal-text');
     const closeBtn = document.getElementById('js-modal-close');
-
-    // 画像とテキスト、両方を対象にする
     const popups = document.querySelectorAll('.js-popup');
+
+    let scrollPosition = 0;
 
     popups.forEach(el => {
         el.addEventListener('click', () => {
-            // <li> を取得（クリックされた画像 or テキストの親）
             const item = el.closest('li');
-
-            // 画像タグを探す（必ず1つある想定）
             const imgTag = item.querySelector('img');
-
-            // モーダルに表示する画像を取得
             const modalImageSrc = imgTag.getAttribute('data-modal') || imgTag.src;
             modalImg.src = modalImageSrc;
 
-            // テキスト（1行に整形）
             const text = item.querySelector('.p-course__item-text').textContent;
             modalText.textContent = text;
 
-            // モーダルを表示
+            // 背景スクロールを止める処理
+            scrollPosition = window.pageYOffset;
+            document.body.classList.add('is-fixed');
+            document.body.style.top = `-${scrollPosition}px`;
+
+            // モーダル表示
             modal.style.display = 'flex';
         });
     });
 
-    // ×ボタンでモーダルを閉じる
-    closeBtn.addEventListener('click', () => {
+    const closeModal = () => {
         modal.style.display = 'none';
-    });
 
-    // モーダル外をクリックして閉じる
+        // 背景スクロール復帰処理
+        document.body.classList.remove('is-fixed');
+        document.body.style.top = '';
+        window.scrollTo(0, scrollPosition);
+    };
+
+    closeBtn.addEventListener('click', closeModal);
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
-            modal.style.display = 'none';
+            closeModal();
         }
     });
 });
+
 
 // TOPへ戻るボタン
 const pagetop_btn = document.querySelector(".js-pageTop");
