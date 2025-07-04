@@ -87,7 +87,7 @@
 
 .p-recommend__contents-img {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     width: calc(600 / 920 * 100%);
     @include fw.mq("sp") {
         order: 1;
@@ -141,7 +141,7 @@
 
 .p-recommend__text-box {
     position: relative;
-    z-index: 0;
+    z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +158,6 @@
 }
 
 .p-recommend .p-recommend__contents:nth-of-type(2) .p-recommend__text-box {
-    
     text-align: left;
 }
 

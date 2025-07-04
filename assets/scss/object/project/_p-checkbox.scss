@@ -23,7 +23,7 @@
     width: 200px;
     margin-bottom: 5px;
     font-size: 1.8rem;
-    cursor: pointer;
+    cursor: default;
     @include fw.mq("sp") {
         flex: 1 1 50%;
         font-size: 1.6rem;
@@ -36,7 +36,6 @@
     display: inline-block;
     padding-left: 40px;
     font-size: 1.8rem;
-    cursor: pointer;
     // 他のスタイルそのまま
     @include fw.mq("large") {
         font-size: 1.6rem;
