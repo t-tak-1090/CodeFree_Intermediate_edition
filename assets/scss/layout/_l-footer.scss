@@ -1,13 +1,28 @@
 @use "../global/forward" as fw;
+@use "../foundation/base" as *;
 
 .l-footer {
-    padding-top: 81px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/catchphrase/catchphrase-bg-img.webp);
+    position: relative;
+    z-index: 0;
+    padding-top: 77px;
+    overflow: hidden;
     @include fw.mq("sp") {
         padding-top: 50px;
     }
+}
+
+.l-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/course/course-bg-img.webp);
+    opacity: 0.2;
 }
 
 .l-footer__inner {
@@ -21,6 +36,8 @@
 }
 
 .l-footer__logo-wrapper {
+    max-width: 722px;
+    margin-inline: auto;
     padding-bottom: 26px;
     text-align: center;
     border-bottom: 1px solid #000;
@@ -33,6 +50,11 @@
     font-size: 2rem;
     font-weight: 500;
     line-height: calc(33 / 20);
+    transition: .3s;
+}
+
+.l-footer__logo:hover {
+    opacity: 0.5;
 }
 
 .l-footer__copyright {
@@ -47,6 +69,7 @@
 .l-footer__copyright-text {
     color: #fff;
     font-size: 2rem;
+    font-family: $english;
     font-weight: 500;
     line-height: calc(33 / 20);
     @include fw.mq("sp") {

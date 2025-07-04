@@ -1,0 +1,50 @@
+@use "../../global/forward" as fw;
+
+.p-privacy {
+    margin-bottom: 80px;
+    padding: 40px 60px 40px 40px;
+    background-color: #fff;
+    height: 300px;
+    overflow-y: auto;
+    @include fw.mq("sp") {
+        height: 320px;
+        margin-bottom: 40px;
+        padding: 20px 50px 30px 30px;
+    }
+}
+
+.p-privacy::-webkit-scrollbar {
+    width: 10px;
+    background-color: #e3e3e3;
+}
+
+.p-privacy::-webkit-scrollbar-track {
+    padding: 10px;
+}
+
+.p-privacy::-webkit-scrollbar-thumb {
+    background-color: #9b9b9b;
+}
+
+.p-privacy h3,
+.p-privacy p,
+.p-privacy ul li {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(31 / 18);
+    @include fw.mq("sp") {
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+    }
+}
+
+.p-privacy__title {
+    margin-bottom: 30px;
+}
+
+.p-privacy ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}

@@ -1,14 +1,28 @@
 @use "../../global/forward" as fw;
+@use "../../foundation/base" as *;
 
 .p-access {
     position: relative;
+    z-index: 0;
     padding: 80px 0 146px 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/catchphrase/catchphrase-bg-img.webp);
+    overflow: hidden;
     @include fw.mq("sp") {
         padding: 50px 0 27px 0;
     }
+}
+
+.p-access::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/catchphrase/catchphrase-bg-img.webp);
+    opacity: 0.2;
 }
 
 .p-access__title {
@@ -38,14 +52,14 @@
 }
 
 .p-access__map {
-    width: 65.2173913%;
-    height: 400px;
+    width: calc(620 / 920 * 100%);
+    max-width: 600px;
     aspect-ratio: 3 / 2;
     @include fw.mq("sp") {
         width: 100%;
-        height: 300px;
-        margin-inline: auto;
-        margin-bottom: 20px;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        margin-bottom: 0;
     }
 }
 
@@ -67,7 +81,7 @@
         position: static;
         width: 100%;
         margin-inline: auto;
-        padding: 20px;
+        padding: 25px 20px 20px 20px;
     }
 }
 
@@ -85,7 +99,7 @@
     margin-bottom: 12px;
     font-size: 1.6rem;
     font-weight: 500;
-    font-family: "Noto Serif JP", serif;
+    font-family: $address;
     line-height: calc(25 / 16);
     @include fw.mq("sp") {
         font-size: 1.6rem;
@@ -96,18 +110,23 @@
     margin-bottom: 15px;
     font-size: 1.6rem;
     font-weight: 500;
-    font-family: "Noto Serif JP", serif;
+    font-family: $address;
     line-height: calc(25 / 16);
+    transition: all 0.3s;
     @include fw.mq("sp") {
         margin-bottom: 10px;
         font-size: 1.6rem;
     }
 }
 
+.p-access__address-telephone:hover {
+    opacity: 0.5;
+}
+
 .p-access__telephone-number {
     font-size: 2.5rem;
     font-weight: 500;
-    font-family: "Noto Serif JP", serif;
+    font-family: $address;
     line-height: calc(25 / 25);
     @include fw.mq("sp") {
         font-size: 2.5rem;
@@ -118,11 +137,16 @@
     margin-bottom: 6.5px;
     font-size: 1.6rem;
     font-weight: 500;
-    font-family: "Noto Serif JP", serif;
+    font-family: $address;
     line-height: calc(25 / 16);
+    transition: all 0.3s;
     @include fw.mq("sp") {
         font-size: 1.6rem;
     }
+}
+
+.p-access__address-email:hover {
+    opacity: 0.5;
 }
 
 .p-access__address-email span {
