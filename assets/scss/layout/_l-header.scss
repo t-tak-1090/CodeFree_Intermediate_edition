@@ -8,7 +8,6 @@
     z-index: 20;
     width: 100%;
     height: 80px;
-    max-width: 1080px;
     transition: background-color 0.3s ease;
     @include fw.mq("sp") {
         height: 50px;
@@ -25,7 +24,13 @@
     justify-content: space-between;
     gap: 1.8518%;
     height: 80px;
-    padding: 0 7.407%;
+    max-width: 1080px;
+    margin-inline: auto;
+    padding-top: 10px;
+    padding-inline: 7.407%;
+    @include fw.mq("large") {
+        padding-inline: 20px;
+    }
     @include fw.mq("sp") {
         height: 50px;
         padding: 0 22px;
@@ -41,8 +46,17 @@
     font-weight: 500;
     transition: all 0.3s;
     @include fw.mq("large") {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
+    @include fw.mq("sp") {
+        font-size: 2rem;
+    }
+}
+
+.l-header__logo a {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .l-header__logo:hover {

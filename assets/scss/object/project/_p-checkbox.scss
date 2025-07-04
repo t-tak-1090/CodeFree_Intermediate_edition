@@ -2,15 +2,12 @@
 
 .p-checkbox__wrapper {
     display: flex;
-    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     align-items: center;
     gap: 0; /* 3.125% */
     padding: 5px 0 0 0;
     @include fw.mq("sp") {
         flex-wrap: wrap;
-        justify-content: first baseline;
-        gap: 0;
     }
 }
 
@@ -43,6 +40,9 @@
     // 他のスタイルそのまま
     @include fw.mq("large") {
         font-size: 1.6rem;
+    }
+    @include fw.mq("exsp") {
+        font-size: 1.2rem;
     }
 }
 

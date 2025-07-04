@@ -10,22 +10,3 @@
         margin-bottom: 30px;
     }
 }
-
-.c-textarea-privacy {
-    width: 100%;
-    height: 307px;
-    margin-bottom: 80px;
-    padding: 50px 60px 40px 40px;
-    font-weight: 500;
-    font-size: 1.8rem;
-    font-family: 'Zen Old Mincho', serif;
-    line-height: calc(31 / 18);
-    background-color: #fff;
-    @include fw.mq("sp") {
-        height: 320px;
-        margin-bottom: 50px;
-        padding: 30px 60px 30px 30px;
-        font-size: 1.6rem;
-        line-height: calc(33 / 16);
-    }
-}

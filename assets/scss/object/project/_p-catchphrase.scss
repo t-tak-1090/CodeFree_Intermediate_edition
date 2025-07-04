@@ -1,13 +1,26 @@
 @use "../../global/forward" as fw;
 
 .p-catchphrase {
+    position: relative;
+    z-index: 0;
     padding: 135px 0 117px 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/catchphrase/catchphrase-bg-img.webp);
+    overflow: hidden;
     @include fw.mq("sp") {
         padding: 60px 0;
     }
+}
+
+.p-catchphrase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/catchphrase/catchphrase-bg-img.webp);
+    z-index: -1;
 }
 
 .p-catchphrase__wrapper {
@@ -26,7 +39,8 @@
 }
 
 .p-catchphrase__title {
-    margin-right: -9px;
+    margin-top: -2px;
+    margin-right: -11px;
     margin-left: 55px;
     color: #530700;
     font-size: 3rem;
@@ -53,12 +67,14 @@
 }
 
 .p-catchphrase__text {
+    margin-right: -17px;
     font-size: 1.8rem;
     font-weight: 500;
-    line-height: 2.37;
+    line-height: 2.69;
     letter-spacing: 0.37em;
     writing-mode: vertical-rl;
     @include fw.mq("sp") {
+        margin-right: -3px;
         font-size: 1.6rem;
         line-height: 1.6;
     }
