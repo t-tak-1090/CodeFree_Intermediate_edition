@@ -27,7 +27,7 @@
     max-width: 1080px;
     margin-inline: auto;
     padding-top: 10px;
-    padding-inline: 7.407%;
+    padding-inline: 80px; // 7.407%
     @include fw.mq("large") {
         padding-inline: 20px;
     }

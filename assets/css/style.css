@@ -461,7 +461,7 @@ textarea.c-textarea-privacy {
   max-width: 1080px;
   margin-inline: auto;
   padding-top: 10px;
-  padding-inline: 7.407%;
+  padding-inline: 80px;
 }
 @media screen and (max-width: 993px) {
   .l-header__inner {
@@ -1191,7 +1191,7 @@ textarea.c-textarea-privacy {
 
 .p-recommend__contents-img {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   width: 65.2173913043%;
 }
 @media screen and (max-width: 767px) {
@@ -1259,7 +1259,7 @@ textarea.c-textarea-privacy {
 
 .p-recommend__text-box {
   position: relative;
-  z-index: 0;
+  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2340,7 +2340,7 @@ textarea.c-textarea-privacy {
   width: 200px;
   margin-bottom: 5px;
   font-size: 1.8rem;
-  cursor: pointer;
+  cursor: default;
 }
 @media screen and (max-width: 767px) {
   .p-checkbox__label {
@@ -2357,7 +2357,6 @@ textarea.c-textarea-privacy {
   display: inline-block;
   padding-left: 40px;
   font-size: 1.8rem;
-  cursor: pointer;
 }
 @media screen and (max-width: 993px) {
   .p-checkbox__span {
