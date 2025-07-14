@@ -7,7 +7,7 @@
     padding: 80px 0 146px 0;
     overflow: hidden;
     @include fw.mq("sp") {
-        padding: 50px 0 27px 0;
+        padding: 50px 0 34px 0;
     }
 }
 
@@ -22,7 +22,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/catchphrase/catchphrase-bg-img.webp);
-    opacity: 0.2;
+    opacity: 0.6;
+    @include fw.mq("sp") {
+        background-image: url(../img/access/access-bg-sp-img.webp);
+    }
 }
 
 .p-access__title {
@@ -58,8 +61,8 @@
     @include fw.mq("sp") {
         width: 100%;
         max-width: 100%;
-        aspect-ratio: 1 / 1;
-        margin-bottom: 0;
+        aspect-ratio: 315 / 300;
+        margin-bottom: 20px;
     }
 }
 
@@ -81,7 +84,7 @@
         position: static;
         width: 100%;
         margin-inline: auto;
-        padding: 25px 20px 20px 20px;
+        padding: 20px 20px 12px 20px;
     }
 }
 
@@ -112,15 +115,10 @@
     font-weight: 500;
     font-family: $address;
     line-height: calc(25 / 16);
-    transition: all 0.3s;
     @include fw.mq("sp") {
         margin-bottom: 10px;
         font-size: 1.6rem;
     }
-}
-
-.p-access__address-telephone:hover {
-    opacity: 0.5;
 }
 
 .p-access__telephone-number {
@@ -128,9 +126,14 @@
     font-weight: 500;
     font-family: $address;
     line-height: calc(25 / 25);
+    transition: all 0.3s;
     @include fw.mq("sp") {
         font-size: 2.5rem;
     }
+}
+
+.p-access__telephone-number:hover {
+    opacity: 0.5;
 }
 
 .p-access__address-email {
@@ -139,16 +142,16 @@
     font-weight: 500;
     font-family: $address;
     line-height: calc(25 / 16);
-    transition: all 0.3s;
     @include fw.mq("sp") {
         font-size: 1.6rem;
     }
 }
 
-.p-access__address-email:hover {
-    opacity: 0.5;
-}
-
 .p-access__address-email span {
     margin-left: 15px;
+    transition: all 0.3s;
+}
+
+.p-access__address-email span:hover {
+    opacity: 0.5;
 }

@@ -5,7 +5,7 @@
     width: 300px;
     max-width: 100%;
     margin-inline: auto;
-    padding: 10px 20px;
+    padding: 4px 20px;
     background-color: #530700;
     color: #fff;
     font-size: 2rem;
@@ -32,8 +32,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 68px;
+    height: 68px;
     background: #530700;
     border-radius: 50%;
     cursor: pointer;
@@ -44,6 +44,43 @@
     }
 }
 
-.p-button__icon {
-    width: 25px;
+.p-button__pagetop:hover {
+    background-color: #fff;
+    border: 1px solid #530700;
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    width: 5px;
+    height: 0px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+}
+
+.arrow::before,
+.arrow::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: calc(50% - 2.5px);
+    width: 5px;
+    height: 18.8px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    transform-origin: 50% 2.5px;
+    transition: .3s;
+}
+
+.p-button__pagetop:hover .arrow::before,
+.p-button__pagetop:hover .arrow::after {
+    background-color: #530700;
+}
+
+.arrow::before {
+    transform: rotate(38.15deg);
+}
+
+.arrow::after {
+    transform: rotate(-38.15deg);
 }

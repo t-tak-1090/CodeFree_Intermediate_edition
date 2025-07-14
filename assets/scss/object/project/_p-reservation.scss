@@ -1,15 +1,15 @@
 @use "../../global/forward" as fw;
 
 .p-reservation {
-    padding: 80px 0 76px 0;
+    padding: 80px 0 86px 0;
     background-color: rgba(83, 7, 0, 0.1);
     @include fw.mq("sp") {
-        padding: 53px 0 48px 0;
+        padding: 53px 0 55px 0;
     }
 }
 
 .p-reservation__title {
-    margin-bottom: 38px;
+    margin-bottom: 35px;
 }
 
 .p-reservation__title-ja {
@@ -37,7 +37,7 @@
 .p-reservation__text-box {
     margin-bottom: 35px;
     @include fw.mq("sp") {
-        margin-bottom: 27px;
+        margin-bottom: 30px;
     }
 }
 

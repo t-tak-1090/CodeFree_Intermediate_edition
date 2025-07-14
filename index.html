@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="和風居酒屋　源は、和食を中心に、旬の食材を使った料理を提供します。">
-    <!-- cssの読み込み -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
     <!-- フォントの読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- aos.js -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- cssの読み込み -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- ヘッダー -->
@@ -64,21 +65,18 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <picture class="p-fv__slider-01">
-                                <source srcset="assets/img/fv/slider-img01.jpg" media="(min-width: 768px)">
                                 <source srcset="assets/img/fv/sp-slider-img01.jpg" media="(max-width: 767px)">
                                 <img src="assets/img/fv/slider-img01.jpg" alt="和風居酒屋　源">
                             </picture>
                         </div>
                         <div class="swiper-slide">
                             <picture class="p-fv__slider-02">
-                                <source srcset="assets/img/fv/slider-img02.jpg" media="(min-width: 768px)">
                                 <source srcset="assets/img/fv/sp-slider-img02.jpg" media="(max-width: 767px)">
                                 <img src="assets/img/fv/slider-img02.jpg" alt="和風居酒屋　源">
                             </picture>
                         </div>
                         <div class="swiper-slide">
                             <picture class="p-fv__slider-03">
-                                <source srcset="assets/img/fv/slider-img03.jpg" media="(min-width: 768px)">
                                 <source srcset="assets/img/fv/sp-slider-img03.jpg" media="(max-width: 767px)">
                                 <img src="assets/img/fv/slider-img03.jpg" alt="和風居酒屋　源">
                             </picture>
@@ -95,7 +93,7 @@
         <!-- キャッチフレーズ -->
         <section id="catchphrase" class="p-catchphrase js-catchphrase">
             <div class="l-inner">
-                <div class="p-catchphrase__wrapper" data-aos="fade-in">
+                <div class="p-catchphrase__wrapper" data-aos="fade-up">
                     <h2 class="p-catchphrase__title">
                         五感を刺激する<br>
                         本来の和食を
@@ -119,14 +117,17 @@
         <!-- いちおし -->
         <section id="recommend" class="p-recommend">
             <div class="l-inner">
-                <hgroup class="c-title p-recommend__title" data-aos="fade-in">
-                    <h2 class="c-title-ja p-recommend__title-ja">いちおし</h2>
-                    <p class="c-title-en p-recommend__title-en">Recommendation</p>
-                </hgroup>
-                <div class="p-recommend__contents" data-aos="fade-in">
+                <h2 class="c-title p-recommend__title" data-aos="fade-up">
+                    <span class="c-title-ja p-recommend__title-ja">いちおし</span>
+                    <span class="c-title-en p-recommend__title-en">Recommendation</span>
+                </h2>
+                <div class="p-recommend__contents" data-aos="fade-up">
                     <div class="p-recommend__contents-flex">
                         <div class="p-recommend__contents-img">
-                            <img src="assets/img/recommendation/recommendation-img01.jpg" alt="日本全国の旬の素材">
+                            <picture>
+                                <source srcset="assets/img/recommendation/sp-recommendation-img01.jpg" media="(max-width: 767px)">
+                                <img src="assets/img/recommendation/recommendation-img01.jpg" alt="日本全国の旬の素材">
+                            </picture>
                             <p class="p-recommend__extra">厳選した食材</p>
                         </div>
                         <div class="p-recommend__text-box">
@@ -143,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="p-recommend__contents" data-aos="fade-in">
+                <div class="p-recommend__contents" data-aos="fade-up">
                     <div class="p-recommend__contents-flex">
                         <div class="p-recommend__text-box">
                             <p class="p-recommend__text">
@@ -157,16 +158,22 @@
                             </p>
                         </div>
                         <div class="p-recommend__contents-img">
-                            <img src="assets/img/recommendation/recommendation-img02.jpg" alt="料理に合わせた日本酒">
+                            <picture>
+                                <source srcset="assets/img/recommendation/sp-recommendation-img02.jpg" media="(max-width: 767px)">
+                                <img src="assets/img/recommendation/recommendation-img02.jpg" alt="料理に合わせた日本酒">
+                            </picture>
                             <p class="p-recommend__extra">こだわりの徳利とおちょこ</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="p-recommend__contents" data-aos="fade-in">
+                <div class="p-recommend__contents" data-aos="fade-up">
                     <div class="p-recommend__contents-flex">
                         <div class="p-recommend__contents-img">
-                            <img src="assets/img/recommendation/recommendation-img03.jpg" alt="季節を感じるお部屋で特別な空間を">
+                            <picture>
+                                <source srcset="assets/img/recommendation/sp-recommendation-img03.jpg" media="(max-width: 767px)">
+                                <img src="assets/img/recommendation/recommendation-img03.jpg" alt="季節を感じるお部屋で特別な空間を">
+                            </picture>
                             <p class="p-recommend__extra">２名席【桜】</p>
                         </div>
                         <div class="p-recommend__text-box">
@@ -188,11 +195,11 @@
         <!-- コース -->
         <section id="course" class="p-course">
             <div class="l-inner">
-                <hgroup class="c-title p-course__title" data-aos="fade-in">
-                    <h2 class="c-title-ja p-course__title-ja">コース</h2>
-                    <p class="c-title-en p-course__title-en">Course</p>
-                </hgroup>
-                <ul class="p-course__list" data-aos="fade-in">
+                <h2 class="c-title p-course__title" data-aos="fade-up">
+                    <span class="c-title-ja p-course__title-ja">コース</span>
+                    <span class="c-title-en p-course__title-en">Course</span>
+                </h2>
+                <ul class="p-course__list" data-aos="fade-up">
                     <li class="p-course__item">
                         <picture class="p-course__item-img">
                             <source srcset="assets/img/course/course-img01.jpg" media="(min-width: 768px)">
@@ -262,29 +269,35 @@
         <!-- お知らせ -->
         <section id="news" class="p-news">
             <div class="l-inner">
-                <hgroup class="c-title p-news__title" data-aos="fade-in">
-                    <h2 class="c-title-ja p-news__title-ja">お知らせ</h2>
-                    <p class="c-title-en p-news__title-en">News</p>
-                </hgroup>
+                <h2 class="c-title p-news__title" data-aos="fade-up">
+                    <span class="c-title-ja p-news__title-ja">お知らせ</span>
+                    <span class="c-title-en p-news__title-en">News</span>
+                </h2>
 
-                <div class="p-news__contents" data-aos="fade-in">
+                <div class="p-news__contents" data-aos="fade-up">
                     <div class="p-news__contents-list">
                         <div class="p-news__list-header">
                             <p>お知らせ</p>
                         </div>
                         <div class="p-news__list-body">
-                            <a class="p-news__list-item" href="">
-                                <time datetime="0000-00">0000.00</time>
-                                <p>土曜のお昼の番組で紹介されました！</p>
-                            </a>
-                            <a class="p-news__list-item" href="">
-                                <time datetime="0000-00">0000.00</time>
-                                <p>完全予約制についてのお願いとお知らせ</p>
-                            </a>
-                            <a class="p-news__list-item" href="">
-                                <time datetime="0000-00">0000.00</time>
-                                <p>年末年始の営業についてのご案内</p>
-                            </a>
+                            <div class="p-news__list-item-wrapper">
+                                <a class="p-news__list-item" href="">
+                                    <time datetime="0000-00">0000.00</time>
+                                    <p>土曜のお昼の番組で紹介されました！</p>
+                                </a>
+                            </div>
+                            <div class="p-news__list-item-wrapper">
+                                <a class="p-news__list-item" href="">
+                                    <time datetime="0000-00">0000.00</time>
+                                    <p>完全予約制についてのお願いとお知らせ</p>
+                                </a>
+                            </div>
+                            <div class="p-news__list-item-wrapper">
+                                <a class="p-news__list-item" href="">
+                                    <time datetime="0000-00">0000.00</time>
+                                    <p>年末年始の営業についてのご案内</p>
+                                </a>
+                            </div>
                             <div class="p-news__list-more-wrapper">
                                 <a class="p-news__list-more" href="">
                                     <span>more</span>
@@ -298,18 +311,24 @@
                             <p>ブログ</p>
                         </div>
                         <div class="p-news__list-body">
-                            <a class="p-news__list-item" href="">
-                                <time datetime="0000-00">0000.00</time>
-                                <p>記念日のお客様がご来店いただきました！</p>
-                            </a>
-                            <a class="p-news__list-item" href="">
-                                <time datetime="0000-00">0000.00</time>
-                                <p>【vol.67】こだわりの日本酒を探して〜佐賀〜</p>
-                            </a>
-                            <a class="p-news__list-item" href="">
-                                <time datetime="0000-00">0000.00</time>
-                                <p>飲食店経営でやって良かったこと10選</p>
-                            </a>
+                            <div class="p-news__list-item-wrapper">
+                                <a class="p-news__list-item" href="">
+                                    <time datetime="0000-00">0000.00</time>
+                                    <p>記念日のお客様がご来店いただきました！</p>
+                                </a>
+                            </div>
+                            <div class="p-news__list-item-wrapper">
+                                <a class="p-news__list-item" href="">
+                                    <time datetime="0000-00">0000.00</time>
+                                    <p>【vol.67】こだわりの日本酒を探して〜佐賀〜</p>
+                                </a>
+                            </div>
+                            <div class="p-news__list-item-wrapper">
+                                <a class="p-news__list-item" href="">
+                                    <time datetime="0000-00">0000.00</time>
+                                    <p>飲食店経営でやって良かったこと10選</p>
+                                </a>
+                            </div>
                             <div class="p-news__list-more-wrapper">
                                 <a class="p-news__list-more" href="">
                                     <span>more</span>
@@ -325,11 +344,11 @@
         <!-- アクセス -->
         <section id="access" class="p-access">
             <div class="l-inner">
-                <hgroup class="c-title p-access__title" data-aos="fade-in">
-                    <h2 class="c-title-ja p-access__title-ja">アクセス</h2>
-                    <p class="c-title-en p-access__title-en">Access</p>
-                </hgroup>
-                <div class="p-access__contents" data-aos="fade-in">
+                <h2 class="c-title p-access__title" data-aos="fade-up">
+                    <span class="c-title-ja p-access__title-ja">アクセス</span>
+                    <span class="c-title-en p-access__title-en">Access</span>
+                </h2>
+                <div class="p-access__contents" data-aos="fade-up">
                     <div class="p-access__map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1310.4103721030872!2d139.7765515891995!3d35.6728316331236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018895df5420e33%3A0x989bb483f1b21f54!2z44GT44G-44Gk!5e0!3m2!1sja!2sjp!4v1747002009866!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -355,11 +374,11 @@
         <!-- ご予約・お問い合わせ -->
         <section id="reservation" class="p-reservation">
             <div class="l-inner">
-                <hgroup class="c-title p-reservation__title" data-aos="fade-in">
-                    <h2 class="c-title-ja p-reservation__title-ja">ご予約・<br class="u-exsp-only">お問い合わせ</h2>
-                    <p class="c-title-en p-reservation__title-en">Reservations / Contact</p>
-                </hgroup>
-                <div class="p-reservation__contents" data-aos="fade-in">
+                <h2 class="c-title p-reservation__title" data-aos="fade-up">
+                    <span class="c-title-ja p-reservation__title-ja">ご予約・<br class="u-exsp-only">お問い合わせ</span>
+                    <span class="c-title-en p-reservation__title-en">Reservations / Contact</span>
+                </h2>
+                <div class="p-reservation__contents" data-aos="fade-up">
                     <div class="p-reservation__text-box">
                         <p class="p-reservation__text">
                             ご予約は前日までの受付となります。<br>
@@ -370,7 +389,7 @@
                     <div class="p-form">
                         <form action="submit" method="post">
                             <div class="p-form__item">
-                                <label class="c-label" for="name">お名前*</label>
+                                <label class="c-label" for="name">お名前&nbsp;*</label>
                                 <input class="c-input" type="text" id="name" name="name" placeholder="例：北村太郎" required>
                             </div>
                             <div class="p-form__item-radio">
@@ -387,7 +406,7 @@
                                 </div>
                             </div>
                             <div class="p-form__item">
-                                <label class="c-label" for="email">メールアドレス*</label>
+                                <label class="c-label" for="email">メールアドレス&nbsp;&nbsp;*</label>
                                 <input class="c-input" type="email" id="email" name="email" placeholder="例：aaaaaaaa@gmail.com" required>
                             </div>
                             <div class="p-form__item">
@@ -402,7 +421,7 @@
                                 </div>
                             </div>
                             <div class="p-form__item__textarea">
-                                <label class="c-label" for="content">内容*</label>
+                                <label class="c-label" for="content">内容&nbsp;*</label>
                                 <textarea class="c-textarea" type="textarea" name="content" id="content" required></textarea>
                             </div>
                             <div class="p-form__item">
@@ -448,20 +467,20 @@
                             <div class="p-form__item__privacy">
                                 <label class="c-label p-form__label-privacy" for="privacy">個人情報保護方針</label>
                                 <div class="p-privacy">
-                                    <hgroup class="p-privacy__title">
-                                        <h3>個人情報取扱事業者の氏名又は名称(法24条1項1号)</h3>
-                                        <p>和風居酒屋　源</p>
-                                    </hgroup>
+                                    <h3 class="p-privacy__title">
+                                        <span>個人情報取扱事業者の氏名又は名称(法24条1項1号)</span>
+                                        <span>和風居酒屋　源</span>
+                                    </h3>
 
-                                    <hgroup class="p-privacy__title">
-                                        <h3>個人情報の取り扱い</h3>
-                                        <p>弊社は、個人情報保護に関連する法令を遵守し、お客様からご提供いただく個人情報を、細心の注意を払って取り扱っております。このプライバシーポリシーでは、当社におけるお客様の個人情報の取扱いについてご説明しております。</p>
-                                    </hgroup>
+                                    <h3 class="p-privacy__title">
+                                        <span>個人情報の取り扱い</span>
+                                        <span>弊社は、個人情報保護に関連する法令を遵守し、お客様からご提供いただく個人情報を、細心の注意を払って取り扱っております。このプライバシーポリシーでは、当社におけるお客様の個人情報の取扱いについてご説明しております。</span>
+                                    </h3>
 
-                                    <hgroup class="p-privacy__title">
-                                        <h3>個人情報の利用目的(法18条、15条)</h3>
-                                        <p>弊社は建築物の設計、施工を主とした当社業務ならびにアフターサービスをさせていただく上で、お客様の個人情報を原則として次の利用目的の範囲内で利用させていただきます。なお、アンケート用紙・ウェブサイトの他のページ等で特に利用目的を定めている場合は、その利用目的を含みます。</p>
-                                    </hgroup>
+                                    <h3 class="p-privacy__title">
+                                        <span>個人情報の利用目的(法18条、15条)</span>
+                                        <span>弊社は建築物の設計、施工を主とした当社業務ならびにアフターサービスをさせていただく上で、お客様の個人情報を原則として次の利用目的の範囲内で利用させていただきます。なお、アンケート用紙・ウェブサイトの他のページ等で特に利用目的を定めている場合は、その利用目的を含みます。</span>
+                                    </h3>
                                     <ul>
                                         <li>・お客様からご注文頂いた工事を適切に完成させるため及び物品の納品をさせて頂くため、お客様へ弊社が取扱う商品を積極的に提案する営業活動のため、商品及びサービスの提供に関する手続(融資・申請・保証・保険・登記など)の支援、取次ぎのため</li>
                                         <li>・お客様に弊社が取扱う商品、企業活動、イベント等に関するお知らせをお届けするため (カタログ、ご提案資料、展示のご案内、各種刊行物など)</li>
@@ -482,15 +501,15 @@
                                         <li>・会計監査上の確認作業を行うため</li>
                                     </ul>
 
-                                    <hgroup class="p-privacy__title">
-                                        <h3>個人情報の安全対策(法20条)</h3>
-                                        <p>お客様の個人情報を安全に管理・運営するよう鋭意努力しており、個人情報への外部からの不正なアクセス、個人情報の紛失・毀損・破壊・改ざん・漏えい、社外への不正な流出などへの危険防止に対する合理的かつ適切な安全対策を行っています。また個人情報を取り扱う部門ごとに情報管理責任者を置き、個人情報の適切な管理に努めるとともに、情報セキュリティに関する規程を設けて社員への周知徹底を実施しています。</p>
-                                    </hgroup>
+                                    <h3 class="p-privacy__title">
+                                        <span>個人情報の安全対策(法20条)</span>
+                                        <span>お客様の個人情報を安全に管理・運営するよう鋭意努力しており、個人情報への外部からの不正なアクセス、個人情報の紛失・毀損・破壊・改ざん・漏えい、社外への不正な流出などへの危険防止に対する合理的かつ適切な安全対策を行っています。また個人情報を取り扱う部門ごとに情報管理責任者を置き、個人情報の適切な管理に努めるとともに、情報セキュリティに関する規程を設けて社員への周知徹底を実施しています。</span>
+                                    </h3>
 
-                                    <hgroup class="p-privacy__title">
-                                        <h3>第三者への提供(法23条)</h3>
-                                        <p>個人情報は、以下のいずれかに該当する場合を除いて、いかなる第三者にも開示・提供いたしません。</p>
-                                    </hgroup>
+                                    <h3 class="p-privacy__title">
+                                        <span>第三者への提供(法23条)</span>
+                                        <span>個人情報は、以下のいずれかに該当する場合を除いて、いかなる第三者にも開示・提供いたしません。</span>
+                                    </h3>
 
                                     <ul>
                                         <li>・お客さまの同意がある場合。</li>
@@ -500,20 +519,20 @@
                                         <li>・人の生命、身体又は財産の保護のために必要であって、お客様の同意を得ることが困難である場合</li>
                                         <li>・国の機関や地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、お客様の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがある場合</li>
 
-                                        <hgroup class="p-privacy__title">
-                                            <h3>個人情報の開示手続(法25条)</h3>
-                                            <p>お客様本人の個人情報に関する保有データの開示請求があった場合には、ご本人であることを運転免許証・パスポート等の身分証明書で確認させていただいた上、本人確認が終了後、速やかに開示させていただきます。</p>
-                                        </hgroup>
+                                    <h3 class="p-privacy__title">
+                                        <span>個人情報の開示手続(法25条)</span>
+                                        <span>お客様本人の個人情報に関する保有データの開示請求があった場合には、ご本人であることを運転免許証・パスポート等の身分証明書で確認させていただいた上、本人確認が終了後、速やかに開示させていただきます。</span>
+                                    </h3>
 
-                                    <hgroup class="p-privacy__title">
-                                        <h3>個人情報の訂正等(法26条)</h3>
-                                        <p>前項の開示手続きにより、弊社が保有する保有個人データ内容に事実と異なる記載がある場合には、訂正、変更又は削除の手続きを取らせて頂きます。</p>
-                                    </hgroup>
+                                    <h3 class="p-privacy__title">
+                                        <span>個人情報の訂正等(法26条)</span>
+                                        <span>前項の開示手続きにより、弊社が保有する保有個人データ内容に事実と異なる記載がある場合には、訂正、変更又は削除の手続きを取らせて頂きます。</span>
+                                    </h3>
 
-                                    <hgroup class="p-privacy__title">
-                                        <h3>プライバシーポリシーに関するお問合せ先</h3>
-                                        <p>弊社の個人情報の取扱いに関するお問合せは、下記までお問い合せください。</p>
-                                    </hgroup>
+                                    <h3 class="p-privacy__title">
+                                        <span>プライバシーポリシーに関するお問合せ先</span>
+                                        <span>弊社の個人情報の取扱いに関するお問合せは、下記までお問い合せください。</span>
+                                    </h3>
 
                                     <address>
                                         <p>社名	和風居酒屋　源</p>
@@ -533,7 +552,7 @@
 
         <!-- ページトップ -->
         <button class="p-button__pagetop js-pageTop">
-            <img class="p-button__icon" src="assets/img/page-to-top-img.png" alt="ページトップ">
+            <span class="arrow"></span>
         </button>
 
     </main>

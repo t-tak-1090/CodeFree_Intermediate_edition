@@ -7,8 +7,10 @@ $address: "Noto Serif JP", serif;
 
 html {
     font-size: 62.5%;
-    // scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    @include fw.mq("sp") {
+        scroll-padding-top: 50px;
+    }
 }
 body {
     color: #000;

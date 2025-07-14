@@ -9,4 +9,9 @@
     }
 }
 
-
+.p-form .p-form__item:nth-of-type(3) .c-label {
+    letter-spacing: -0.05em;
+    @include fw.mq("sp") {
+        letter-spacing: 0;
+    }
+}
