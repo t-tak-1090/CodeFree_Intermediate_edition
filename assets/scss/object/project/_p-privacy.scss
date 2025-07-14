@@ -2,14 +2,17 @@
 
 .p-privacy {
     margin-bottom: 80px;
-    padding: 40px 60px 40px 40px;
+    padding: 26px 50px 40px 40px;
     background-color: #fff;
     height: 300px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     overflow-y: auto;
     @include fw.mq("sp") {
         height: 320px;
-        margin-bottom: 40px;
-        padding: 20px 50px 30px 30px;
+        margin-bottom: 55px;
+        padding: 20px 40px 30px 30px;
     }
 }
 
@@ -24,6 +27,9 @@
 
 .p-privacy::-webkit-scrollbar-thumb {
     background-color: #9b9b9b;
+    @include fw.mq("sp") {
+        height: 30px;
+    }
 }
 
 .p-privacy h3,
@@ -42,9 +48,12 @@
     margin-bottom: 30px;
 }
 
+.p-privacy__title span {
+    display: block;
+}
+
 .p-privacy ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     margin-bottom: 40px;
 }

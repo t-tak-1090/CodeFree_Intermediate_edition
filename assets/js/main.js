@@ -37,15 +37,15 @@ navLinks.forEach(link => {
     });
 });
 
-// // ファーストビューのスライダー
-// const swiper = new Swiper('.swiper', {
-//     centeredSlides: true,
-//     slidesPerView: 1,
-//     loop: true,
-//     autoplay: {
-//         delay: 5000,
-//     },
-// });
+// ファーストビューのスライダー
+const swiper = new Swiper('.swiper', {
+    centeredSlides: true,
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+});
 
 // スクロールしたらヘッダーの背景色が変わる
 window.addEventListener('DOMContentLoaded', () => {
@@ -111,6 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 aosEl.removeAttribute('data-aos');
             });
 
+            // モーダル表示時にヘッダーのz-indexを0にする
+            document.querySelector('.l-header')?.classList.add('is-modal-open');
+
             // モーダル表示
             modal.style.display = 'flex';
         });
@@ -118,6 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const closeModal = () => {
         modal.style.display = 'none';
+
+        // モーダル表示時にヘッダーのz-indexを0にする
+        document.querySelector('.l-header')?.classList.remove('is-modal-open');
 
         // 背景スクロール復帰処理
         document.body.classList.remove('is-fixed');

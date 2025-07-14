@@ -5,9 +5,21 @@
     justify-content: space-between;
     align-items: center;
     gap: 0; /* 3.125% */
-    padding: 5px 0 0 0;
+    padding: 7px 0 0 0;
     @include fw.mq("sp") {
         flex-wrap: wrap;
+    }
+}
+
+.p-form .p-form__item:nth-of-type(6) .p-checkbox__wrapper:nth-of-type(1) {
+    @include fw.mq("sp") {
+        padding: 8px 0 0 0;;
+    }
+}
+
+.p-form .p-form__item:nth-of-type(6) .p-checkbox__wrapper:nth-of-type(2) {
+    @include fw.mq("sp") {
+        padding: 0;
     }
 }
 
@@ -40,8 +52,20 @@
     @include fw.mq("large") {
         font-size: 1.6rem;
     }
+    @include fw.mq("sp") {
+        padding-left: 30px;
+    }
     @include fw.mq("exsp") {
-        font-size: 1.2rem;
+        padding-left: 30px;
+        font-size: 1.4rem;
+    }
+}
+
+.p-form .p-form__item:nth-of-type(6) .p-checkbox__label:nth-of-type(3),
+.p-form .p-form__item:nth-of-type(6) .p-checkbox__label:nth-of-type(4) {
+    padding-left: 5px;
+    @include fw.mq("sp") {
+        padding-left: 0;
     }
 }
 

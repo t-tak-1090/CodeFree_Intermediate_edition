@@ -22,6 +22,9 @@
     background-repeat: no-repeat;
     background-image: url(../img/course/course-bg-img.webp);
     opacity: 0.2;
+    @include fw.mq("sp") {
+        background-image: url(../img/course/course-bg-sp-img.webp);
+    }
 }
 .p-course__title {
     margin-bottom: 67px;
@@ -44,10 +47,10 @@
 .p-course__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: calc(40 / 1080 * 100%);
+    gap: calc(40 / 920 * 100%);
     @include fw.mq("sp") {
         grid-template-columns: repeat(1, 1fr);
-        gap: 14px;
+        gap: 23px;
     }
 }
 
@@ -67,19 +70,45 @@
     }
 }
 
-.p-course__item-img img {
-    @include fw.mq("sp") {
-        height: 250px;
-    }
-}
-
 .p-course__item-text-box {
-    margin-top: 14px;
+    margin-top: 18px;
     text-align: center;
     @include fw.mq("sp") {
         text-align: left;
     }
 }
+
+.p-course__item:nth-child(1) .p-course__item-text-box {
+    @include fw.mq("sp") {
+        margin-top: 6px;
+    }
+}
+
+.p-course__item:nth-child(2) .p-course__item-text-box {
+    @include fw.mq("sp") {
+        margin-top: 9px;
+    }
+}
+
+.p-course__item:nth-child(3) .p-course__item-text-box {
+    @include fw.mq("sp") {
+        margin-top: 5px;
+    }
+}
+
+.p-course__item:nth-child(4) .p-course__item-text-box {
+    @include fw.mq("sp") {
+        margin-top: 10px;
+    }
+}
+
+.p-course__item-text span {
+    @include fw.mq("sp") {
+        margin-left: -5px;
+    }
+}
+
+
 
 .p-course__item-text {
     font-size: 1.6rem;
@@ -107,19 +136,19 @@
 .p-course__modal-content {
     position: relative;
     width: 90%;
-    max-width: 500px;
-    margin: 0;
-    padding: 15px;
+    max-width: 450px;
+    margin-bottom: 9px;
+    padding: 15px 15px 6px 15px;
     background-color: #fff;
 }
 
 /* 閉じるボタン */
 .modal__close {
     position: absolute;
-    top: -5px;
-    right: -2px;
-    font-size: 3.5rem;
-    font-weight: 700;
+    top: -3px;
+    right: -1px;
+    font-size: 2.5rem;
+    font-weight: 400;
     cursor: pointer;
     transform: rotate(45deg);
     transition: all 0.3s;

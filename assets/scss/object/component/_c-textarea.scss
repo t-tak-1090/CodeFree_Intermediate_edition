@@ -5,6 +5,9 @@
     height: 200px;
     margin-bottom: 50px;
     padding: 15px 20px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(25 / 16);
     background-color: #fff;
     @include fw.mq("sp") {
         margin-bottom: 30px;
