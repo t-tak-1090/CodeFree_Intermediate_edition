@@ -25,6 +25,7 @@
     opacity: 0.6;
     @include fw.mq("sp") {
         background-image: url(../img/access/access-bg-sp-img.webp);
+        opacity: 1;
     }
 }
 

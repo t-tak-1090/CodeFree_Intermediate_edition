@@ -1,13 +1,30 @@
 @use "../../global/forward" as fw;
 
+.p-checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include fw.mq("sp") {
+        gap: 0;
+    }
+}
+
 .p-checkbox__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0; /* 3.125% */
-    padding: 7px 0 0 0;
+    padding: 13px 0 0 0;
     @include fw.mq("sp") {
         flex-wrap: wrap;
+        padding-top: 10px;
+    }
+}
+
+.p-checkbox-container .p-checkbox__wrapper:nth-of-type(2) {
+    padding-top: 5px;
+    @include fw.mq("sp") {
+        padding-top: 0;
     }
 }
 
@@ -58,6 +75,16 @@
     @include fw.mq("exsp") {
         padding-left: 30px;
         font-size: 1.4rem;
+    }
+}
+
+.p-checkbox-container .p-checkbox__wrapper:nth-of-type(1) .p-checkbox__label:nth-of-type(3) .p-checkbox__span,
+.p-checkbox-container .p-checkbox__wrapper:nth-of-type(1) .p-checkbox__label:nth-of-type(4) .p-checkbox__span,
+.p-checkbox-container .p-checkbox__wrapper:nth-of-type(2) .p-checkbox__label:nth-of-type(3) .p-checkbox__span,
+.p-checkbox-container .p-checkbox__wrapper:nth-of-type(2) .p-checkbox__label:nth-of-type(4) .p-checkbox__span {
+    padding-left: 43px;
+    @include fw.mq("sp") {
+        padding-left: 31px;
     }
 }
 

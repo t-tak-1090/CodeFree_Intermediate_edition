@@ -31,8 +31,7 @@
     }
 }
 
-.p-form .p-form__item:nth-of-type(6) {
-    margin-bottom: 46px;
+.p-form__item-checkbox {
     @include fw.mq("sp") {
         margin-bottom: 26px;
     }

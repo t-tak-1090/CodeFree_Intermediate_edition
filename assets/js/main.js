@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     AOS.init({
         offset: 100,
         delay: 0,
-        duration: 1500,
+        duration: 750,
         easing: 'ease-in-out',
         once: false,
     });
@@ -162,9 +162,9 @@ function scroll_top() {
 
 window.addEventListener("scroll", scroll_event);
 function scroll_event() {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 500) {
         pagetop_btn.style.opacity = "1";
-    } else if (window.pageYOffset < 100) {
+    } else if (window.pageYOffset < 500) {
         pagetop_btn.style.opacity = "0";
     }
 }
